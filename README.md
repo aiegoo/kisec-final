@@ -80,5 +80,6 @@ sudo sysmon -c Sysmon_Snippet_This_Machine.xml
 
 ```
 File Link: https://github.com/aiegoo/siem/tree/32bfeb6496b232605ac82cc4aec5b90a8d9e5de2/Wazuh%20Sysmon%20Package
+
 The sysmon_full_config.xml contains aggressive behavioral capture designed for active threat hunting and incident response.
 
