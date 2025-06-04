@@ -1,4 +1,4 @@
-# Investigation Procedures
+# Activities on the Issue Investigation
 
 This document describes the full investigation and monitoring setup performed on the compromised Ubuntu device `172.30.1.94`.
 
