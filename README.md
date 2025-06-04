@@ -83,3 +83,39 @@ File Link: https://github.com/aiegoo/siem/tree/32bfeb6496b232605ac82cc4aec5b90a8
 
 The sysmon_full_config.xml contains aggressive behavioral capture designed for active threat hunting and incident response.
 
+Step 3 — Install Wazuh into the new install ubuntu on Virtualbox
+
+Install the all-in-one deployment of wazuh SIEM into the newly installed ubuntu machine that is in virtualbox. 
+```
+curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
+sudo bash wazuh-install.sh -a
+```
+
+Install wazuh agent. agent command instruction can be found from wazuh dashboard after install it.
+
+Step 4 — Configure Wazuh Agent for Sysmon Log Ingestion
+
+Configure the Wazuh Agent to monitor Sysmon logs from syslog:
+```
+<localfile>
+  <log_format>sysmon</log_format>
+  <location>/var/log/syslog</location>
+</localfile>
+```
+or if Sysmon forwards to journalctl:
+```
+<localfile>
+  <log_format>sysmon</log_format>
+  <location>journalctl</location>
+</localfile>
+```
+
+Step 5 — Apply Custom Wazuh Detection Rules
+
+custom Wazuh rules (wazuh_sysmon_rules.xml) to detect.
+
+The rule file was imported into:
+```
+/var/ossec/etc/rules/local_rules.xml
+```
+File Link: https://github.com/aiegoo/siem/blob/fcb6184eb48e2445710e2adb66afe030f7e2212d/Wazuh%20Sysmon%20Package/wazuh_sysmon_rules.xml
