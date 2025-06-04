@@ -91,6 +91,14 @@ curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-i
 ```
 
 Install wazuh agent. agent command instruction can be found from wazuh dashboard after install it.
+```
+wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.12.0-1_amd64.deb && sudo WAZUH_MANAGER='192.168.56.100' WAZUH_AGENT_NAME='Ubuntu_Mosa' dpkg -i ./wazuh-agent_4.12.0-1_amd64.deb
+
+
+sudo systemctl daemon-reload
+sudo systemctl enable wazuh-agent
+sudo systemctl start wazuh-agent
+```
 
 Step 4 — Configure Wazuh Agent for Sysmon Log Ingestion
 
