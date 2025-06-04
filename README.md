@@ -87,8 +87,7 @@ Step 3 — Install Wazuh into the new install ubuntu on Virtualbox
 
 Install the all-in-one deployment of wazuh SIEM into the newly installed ubuntu machine that is in virtualbox. 
 ```
-curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
-sudo bash wazuh-install.sh -a
+curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 ```
 
 Install wazuh agent. agent command instruction can be found from wazuh dashboard after install it.
