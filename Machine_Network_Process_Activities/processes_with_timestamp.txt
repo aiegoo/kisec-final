@@ -1,0 +1,494 @@
+                 STARTED     PID    PPID USER     CMD
+Tue Jun  3 18:48:33 2025       1       0 root     /sbin/init splash
+Tue Jun  3 18:48:33 2025       2       0 root     [kthreadd]
+Tue Jun  3 18:48:33 2025       3       2 root     [pool_workqueue_release]
+Tue Jun  3 18:48:33 2025       4       2 root     [kworker/R-rcu_gp]
+Tue Jun  3 18:48:33 2025       5       2 root     [kworker/R-sync_wq]
+Tue Jun  3 18:48:33 2025       6       2 root     [kworker/R-slub_flushwq]
+Tue Jun  3 18:48:33 2025       7       2 root     [kworker/R-netns]
+Tue Jun  3 18:48:33 2025       9       2 root     [kworker/0:0H-events_highpri]
+Tue Jun  3 18:48:33 2025      12       2 root     [kworker/R-mm_percpu_wq]
+Tue Jun  3 18:48:33 2025      13       2 root     [rcu_tasks_kthread]
+Tue Jun  3 18:48:33 2025      14       2 root     [rcu_tasks_rude_kthread]
+Tue Jun  3 18:48:33 2025      15       2 root     [rcu_tasks_trace_kthread]
+Tue Jun  3 18:48:33 2025      16       2 root     [ksoftirqd/0]
+Tue Jun  3 18:48:33 2025      17       2 root     [rcu_preempt]
+Tue Jun  3 18:48:33 2025      18       2 root     [rcu_exp_par_gp_kthread_worker/0]
+Tue Jun  3 18:48:33 2025      19       2 root     [rcu_exp_gp_kthread_worker]
+Tue Jun  3 18:48:33 2025      20       2 root     [migration/0]
+Tue Jun  3 18:48:33 2025      21       2 root     [idle_inject/0]
+Tue Jun  3 18:48:33 2025      22       2 root     [cpuhp/0]
+Tue Jun  3 18:48:33 2025      23       2 root     [cpuhp/1]
+Tue Jun  3 18:48:33 2025      24       2 root     [idle_inject/1]
+Tue Jun  3 18:48:33 2025      25       2 root     [migration/1]
+Tue Jun  3 18:48:33 2025      26       2 root     [ksoftirqd/1]
+Tue Jun  3 18:48:33 2025      28       2 root     [kworker/1:0H-events_highpri]
+Tue Jun  3 18:48:33 2025      29       2 root     [cpuhp/2]
+Tue Jun  3 18:48:33 2025      30       2 root     [idle_inject/2]
+Tue Jun  3 18:48:33 2025      31       2 root     [migration/2]
+Tue Jun  3 18:48:33 2025      32       2 root     [ksoftirqd/2]
+Tue Jun  3 18:48:33 2025      34       2 root     [kworker/2:0H-events_highpri]
+Tue Jun  3 18:48:33 2025      35       2 root     [cpuhp/3]
+Tue Jun  3 18:48:33 2025      36       2 root     [idle_inject/3]
+Tue Jun  3 18:48:33 2025      37       2 root     [migration/3]
+Tue Jun  3 18:48:33 2025      38       2 root     [ksoftirqd/3]
+Tue Jun  3 18:48:33 2025      40       2 root     [kworker/3:0H-events_highpri]
+Tue Jun  3 18:48:33 2025      41       2 root     [cpuhp/4]
+Tue Jun  3 18:48:33 2025      42       2 root     [idle_inject/4]
+Tue Jun  3 18:48:33 2025      43       2 root     [migration/4]
+Tue Jun  3 18:48:33 2025      44       2 root     [ksoftirqd/4]
+Tue Jun  3 18:48:33 2025      46       2 root     [kworker/4:0H-events_highpri]
+Tue Jun  3 18:48:33 2025      47       2 root     [cpuhp/5]
+Tue Jun  3 18:48:33 2025      48       2 root     [idle_inject/5]
+Tue Jun  3 18:48:33 2025      49       2 root     [migration/5]
+Tue Jun  3 18:48:33 2025      50       2 root     [ksoftirqd/5]
+Tue Jun  3 18:48:33 2025      52       2 root     [kworker/5:0H-events_highpri]
+Tue Jun  3 18:48:33 2025      53       2 root     [cpuhp/6]
+Tue Jun  3 18:48:33 2025      54       2 root     [idle_inject/6]
+Tue Jun  3 18:48:33 2025      55       2 root     [migration/6]
+Tue Jun  3 18:48:33 2025      56       2 root     [ksoftirqd/6]
+Tue Jun  3 18:48:33 2025      58       2 root     [kworker/6:0H-events_highpri]
+Tue Jun  3 18:48:33 2025      59       2 root     [cpuhp/7]
+Tue Jun  3 18:48:33 2025      60       2 root     [idle_inject/7]
+Tue Jun  3 18:48:33 2025      61       2 root     [migration/7]
+Tue Jun  3 18:48:33 2025      62       2 root     [ksoftirqd/7]
+Tue Jun  3 18:48:33 2025      64       2 root     [kworker/7:0H-events_highpri]
+Tue Jun  3 18:48:33 2025      65       2 root     [kdevtmpfs]
+Tue Jun  3 18:48:33 2025      66       2 root     [kworker/R-inet_frag_wq]
+Tue Jun  3 18:48:33 2025      67       2 root     [kauditd]
+Tue Jun  3 18:48:33 2025      69       2 root     [khungtaskd]
+Tue Jun  3 18:48:33 2025      70       2 root     [oom_reaper]
+Tue Jun  3 18:48:33 2025      72       2 root     [kworker/R-writeback]
+Tue Jun  3 18:48:33 2025      73       2 root     [kcompactd0]
+Tue Jun  3 18:48:33 2025      74       2 root     [ksmd]
+Tue Jun  3 18:48:33 2025      75       2 root     [khugepaged]
+Tue Jun  3 18:48:33 2025      76       2 root     [kworker/R-kintegrityd]
+Tue Jun  3 18:48:33 2025      77       2 root     [kworker/R-kblockd]
+Tue Jun  3 18:48:33 2025      78       2 root     [kworker/R-blkcg_punt_bio]
+Tue Jun  3 18:48:33 2025      81       2 root     [irq/9-acpi]
+Tue Jun  3 18:48:33 2025      83       2 root     [kworker/R-tpm_dev_wq]
+Tue Jun  3 18:48:33 2025      84       2 root     [kworker/R-ata_sff]
+Tue Jun  3 18:48:33 2025      85       2 root     [kworker/R-md]
+Tue Jun  3 18:48:33 2025      86       2 root     [kworker/R-md_bitmap]
+Tue Jun  3 18:48:33 2025      87       2 root     [kworker/R-edac-poller]
+Tue Jun  3 18:48:33 2025      88       2 root     [kworker/R-devfreq_wq]
+Tue Jun  3 18:48:33 2025      89       2 root     [watchdogd]
+Tue Jun  3 18:48:33 2025      91       2 root     [kworker/0:1H-kblockd]
+Tue Jun  3 18:48:33 2025      92       2 root     [kswapd0]
+Tue Jun  3 18:48:33 2025      93       2 root     [ecryptfs-kthread]
+Tue Jun  3 18:48:33 2025      96       2 root     [kworker/R-kthrotld]
+Tue Jun  3 18:48:33 2025      97       2 root     [irq/122-aerdrv]
+Tue Jun  3 18:48:33 2025      98       2 root     [irq/123-aerdrv]
+Tue Jun  3 18:48:33 2025      99       2 root     [irq/123-pcie-dpc]
+Tue Jun  3 18:48:33 2025     100       2 root     [kworker/R-acpi_thermal_pm]
+Tue Jun  3 18:48:33 2025     101       2 root     [hwrng]
+Tue Jun  3 18:48:33 2025     103       2 root     [kworker/R-mld]
+Tue Jun  3 18:48:33 2025     104       2 root     [kworker/1:1H-kblockd]
+Tue Jun  3 18:48:33 2025     105       2 root     [kworker/R-ipv6_addrconf]
+Tue Jun  3 18:48:33 2025     112       2 root     [kworker/R-kstrp]
+Tue Jun  3 18:48:33 2025     114       2 root     [kworker/u33:0-hci0]
+Tue Jun  3 18:48:33 2025     127       2 root     [kworker/R-charger_manager]
+Tue Jun  3 18:48:33 2025     150       2 root     [kworker/7:1H-kblockd]
+Tue Jun  3 18:48:33 2025     154       2 root     [kworker/2:1H-kblockd]
+Tue Jun  3 18:48:33 2025     172       2 root     [kworker/4:1H-kblockd]
+Tue Jun  3 18:48:33 2025     173       2 root     [kworker/3:1H-kblockd]
+Tue Jun  3 18:48:33 2025     183       2 root     [kworker/5:1H-kblockd]
+Tue Jun  3 18:48:33 2025     184       2 root     [kworker/6:1H-kblockd]
+Tue Jun  3 18:48:33 2025     215       2 root     [kworker/R-nvme-wq]
+Tue Jun  3 18:48:33 2025     218       2 root     [kworker/R-nvme-reset-wq]
+Tue Jun  3 18:48:33 2025     224       2 root     [kworker/R-nvme-delete-wq]
+Tue Jun  3 18:48:33 2025     228       2 root     [kworker/R-nvme-auth-wq]
+Tue Jun  3 18:48:33 2025     254       2 root     [scsi_eh_0]
+Tue Jun  3 18:48:33 2025     255       2 root     [kworker/R-scsi_tmf_0]
+Tue Jun  3 18:48:33 2025     256       2 root     [scsi_eh_1]
+Tue Jun  3 18:48:33 2025     257       2 root     [kworker/R-scsi_tmf_1]
+Tue Jun  3 18:48:33 2025     258       2 root     [scsi_eh_2]
+Tue Jun  3 18:48:33 2025     259       2 root     [kworker/R-scsi_tmf_2]
+Tue Jun  3 18:48:37 2025     420       2 root     [jbd2/sda2-8]
+Tue Jun  3 18:48:37 2025     421       2 root     [kworker/R-ext4-rsv-conversion]
+Tue Jun  3 18:48:38 2025     488       1 root     /usr/lib/systemd/systemd-journald
+Tue Jun  3 18:48:38 2025     547       1 root     /usr/lib/systemd/systemd-udevd
+Tue Jun  3 18:48:38 2025     559       2 root     [psimon]
+Tue Jun  3 18:48:38 2025     702       2 root     [irq/143-mei_me]
+Tue Jun  3 18:48:38 2025     730       2 root     [kworker/R-cryptd]
+Tue Jun  3 18:48:39 2025     893       2 root     [kworker/R-ttm]
+Tue Jun  3 18:48:39 2025     894       2 root     [card1-crtc0]
+Tue Jun  3 18:48:39 2025     895       2 root     [card1-crtc1]
+Tue Jun  3 18:48:39 2025     896       2 root     [card1-crtc2]
+Tue Jun  3 18:48:39 2025     902       2 root     [nv_queue]
+Tue Jun  3 18:48:39 2025     903       2 root     [nv_queue]
+Tue Jun  3 18:48:39 2025     904       2 root     [nv_open_q]
+Tue Jun  3 18:48:39 2025     917       2 root     [nvidia-modeset/kthread_q]
+Tue Jun  3 18:48:39 2025     918       2 root     [nvidia-modeset/deferred_close_kthread_q]
+Tue Jun  3 18:48:39 2025     920       2 root     [irq/145-nvidia]
+Tue Jun  3 18:48:39 2025     921       2 root     [nvidia]
+Tue Jun  3 18:48:39 2025     922       2 root     [nv_queue]
+Tue Jun  3 18:48:40 2025    1073       2 root     [kworker/R-cfg80211]
+Tue Jun  3 18:48:40 2025    1076       2 root     [kworker/u33:1-hci0]
+Tue Jun  3 18:48:41 2025    1323       2 root     [UVM global queue]
+Tue Jun  3 18:48:41 2025    1324       2 root     [UVM deferred release queue]
+Tue Jun  3 18:48:41 2025    1325       2 root     [UVM Tools Event Queue]
+Tue Jun  3 18:48:42 2025    1574       2 root     [spl_system_task]
+Tue Jun  3 18:48:42 2025    1575       2 root     [spl_delay_taskq]
+Tue Jun  3 18:48:42 2025    1576       2 root     [spl_dynamic_tas]
+Tue Jun  3 18:48:42 2025    1577       2 root     [spl_kmem_cache]
+Tue Jun  3 18:48:43 2025    1578       2 root     [zvol_tq-0]
+Tue Jun  3 18:48:43 2025    1579       2 root     [zvol_tq-1]
+Tue Jun  3 18:48:43 2025    1580       2 root     [arc_prune]
+Tue Jun  3 18:48:43 2025    1581       2 root     [arc_evict]
+Tue Jun  3 18:48:43 2025    1582       2 root     [arc_reap]
+Tue Jun  3 18:48:43 2025    1583       2 root     [dbu_evict]
+Tue Jun  3 18:48:43 2025    1584       2 root     [dbuf_evict]
+Tue Jun  3 18:48:43 2025    1585       2 root     [z_vdev_file]
+Tue Jun  3 18:48:44 2025    1607       2 root     [l2arc_feed]
+Tue Jun  3 18:48:44 2025    2014       1 _rpc     /sbin/rpcbind -f -w
+Tue Jun  3 18:48:44 2025    2015       1 systemd+ /usr/lib/systemd/systemd-oomd
+Tue Jun  3 18:48:44 2025    2016       1 systemd+ /usr/lib/systemd/systemd-resolved
+Tue Jun  3 18:48:44 2025    2017       2 root     [kworker/R-rpciod]
+Tue Jun  3 18:48:44 2025    2018       2 root     [kworker/R-xprtiod]
+Tue Jun  3 18:48:44 2025    2019       1 root     /sbin/auditd
+Tue Jun  3 18:48:47 2025    2160       1 avahi    avahi-daemon: running [aiegoo.local]
+Tue Jun  3 18:48:47 2025    2161       1 root     /usr/libexec/bluetooth/bluetoothd
+Tue Jun  3 18:48:47 2025    2162       1 message+ @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+Tue Jun  3 18:48:47 2025    2165       1 gnome-r+ /usr/libexec/gnome-remote-desktop-daemon --system
+Tue Jun  3 18:48:47 2025    2176       1 root     /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+Tue Jun  3 18:48:47 2025    2186       1 polkitd  /usr/lib/polkit-1/polkitd --no-debug
+Tue Jun  3 18:48:47 2025    2190       1 root     /usr/lib/snapd/snapd
+Tue Jun  3 18:48:47 2025    2191       1 root     /usr/bin/numad -i 15
+Tue Jun  3 18:48:47 2025    2195       1 nvidia-+ /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+Tue Jun  3 18:48:47 2025    2196       1 root     /usr/libexec/accounts-daemon
+Tue Jun  3 18:48:47 2025    2197       1 root     /usr/sbin/cron -f -P
+Tue Jun  3 18:48:47 2025    2198       1 root     /usr/libexec/switcheroo-control
+Tue Jun  3 18:48:47 2025    2200       1 root     /usr/lib/systemd/systemd-logind
+Tue Jun  3 18:48:47 2025    2201       1 root     /usr/lib/systemd/systemd-machined
+Tue Jun  3 18:48:47 2025    2202       1 root     /usr/sbin/thermald --systemd --dbus-enable --adaptive
+Tue Jun  3 18:48:47 2025    2204       1 root     /usr/libexec/udisks2/udisksd
+Tue Jun  3 18:48:47 2025    2222       1 root     zed -F
+Tue Jun  3 18:48:47 2025    2242    2160 avahi    avahi-daemon: chroot helper
+Tue Jun  3 18:48:47 2025    2284       1 root     /usr/sbin/NetworkManager --no-daemon
+Tue Jun  3 18:48:47 2025    2289       1 root     /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+Tue Jun  3 18:48:47 2025    2343       1 uml-net  /usr/bin/uml_switch -unix /var/run/uml-utilities/uml_switch.ctl
+Tue Jun  3 18:48:47 2025    2400       1 root     /usr/sbin/ModemManager
+Tue Jun  3 18:48:47 2025    2447       1 root     /usr/bin/vmware-usbarbitrator
+Tue Jun  3 18:48:48 2025    2635       1 aiegoo   /usr/bin/python3 /opt/google/chrome-remote-desktop/chrome-remote-desktop --child-process --config=/home/aiegoo/.config/chrome-remote-desktop/host#44146a6783ceedc472e52b03a74260d2.json --start
+Tue Jun  3 18:48:48 2025    2639       1 root     /usr/local/bin/filebrowser -p 3020 -r /home/aiegoo
+Tue Jun  3 18:48:48 2025    2643       1 grafana  /usr/local/bin/grafana/bin/grafana server --config=/usr/local/bin/grafana/conf/grafana.ini --homepath=/usr/local/bin/grafana
+Tue Jun  3 18:48:48 2025    2645       1 jenkins  /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
+Tue Jun  3 18:48:48 2025    2647       1 mongodb  /usr/bin/mongod --setParameter tcmallocReleaseRate=5.0
+Tue Jun  3 18:48:48 2025    2658       1 redis    /usr/bin/redis-server 127.0.0.1:6379
+Tue Jun  3 18:48:48 2025    2664       1 root     /snap/canonical-livepatch/316/canonical-livepatchd
+Tue Jun  3 18:48:48 2025    2668       1 root     /bin/sh /snap/cups/1100/scripts/run-cups-browsed
+Tue Jun  3 18:48:48 2025    2669       1 root     /bin/sh /snap/cups/1100/scripts/run-cupsd
+Tue Jun  3 18:48:48 2025    2687       1 root     /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+Tue Jun  3 18:48:48 2025    2705       1 root     /usr/bin/containerd
+Tue Jun  3 18:48:49 2025    2711       1 root     sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+Tue Jun  3 18:48:49 2025    2731       1 root     /usr/bin/anydesk --service
+Tue Jun  3 18:48:49 2025    2750       1 dnsmasq  /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -r /run/dnsmasq/resolv.conf -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,E06D44B80B8F1D39A95C0B0D7C65D08458E880409BBC683457104237C7F8EC8D --trust-anchor=.,38696,8,2,683D2D0ACB8C9B712A1948B27F741219298D0A450D612C483AF444A4C0FB2B16
+Tue Jun  3 18:48:49 2025    2810       1 root     /usr/sbin/xrdp-sesman
+Tue Jun  3 18:48:49 2025    2904       1 ntpsec   /usr/sbin/ntpd -p /run/ntpd.pid -c /etc/ntpsec/ntp.conf -g -N -u ntpsec:ntpsec
+Tue Jun  3 18:48:49 2025    2911       1 aiegoo   /usr/lib/systemd/systemd --user
+Tue Jun  3 18:48:49 2025    2924       1 root     /usr/sbin/gdm3
+Tue Jun  3 18:48:49 2025    2938    2911 aiegoo   (sd-pam)
+Tue Jun  3 18:48:49 2025    2974       1 xrdp     /usr/sbin/xrdp
+Tue Jun  3 18:48:49 2025    2983       1 postgres /usr/lib/postgresql/17/bin/postgres -D /var/lib/postgresql/17/main -c config_file=/etc/postgresql/17/main/postgresql.conf
+Tue Jun  3 18:48:49 2025    3003    2924 root     gdm-session-worker [pam/gdm-autologin]
+Tue Jun  3 18:48:49 2025    3030       1 root     /usr/bin/suricata -D -c /etc/suricata/suricata.yaml --unix-socket
+Tue Jun  3 18:48:49 2025    3059    2983 postgres postgres: 17/main: checkpointer 
+Tue Jun  3 18:48:49 2025    3060    2983 postgres postgres: 17/main: background writer 
+Tue Jun  3 18:48:50 2025    3177    2911 aiegoo   /usr/bin/pipewire
+Tue Jun  3 18:48:50 2025    3178    2911 aiegoo   /usr/bin/pipewire -c filter-chain.conf
+Tue Jun  3 18:48:50 2025    3179    2911 aiegoo   /usr/bin/python3 /usr/bin/powerline-daemon --foreground
+Tue Jun  3 18:48:50 2025    3182    2911 aiegoo   /usr/bin/wireplumber
+Tue Jun  3 18:48:50 2025    3183    2635 aiegoo   (sd-pam)
+Tue Jun  3 18:48:50 2025    3184    2911 aiegoo   /usr/bin/pipewire-pulse
+Tue Jun  3 18:48:50 2025    3185    2911 aiegoo   /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+Tue Jun  3 18:48:50 2025    3213    2911 aiegoo   /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+Tue Jun  3 18:48:50 2025    3251    2911 aiegoo   /usr/libexec/xdg-document-portal
+Tue Jun  3 18:48:50 2025    3280    2911 aiegoo   /usr/libexec/xdg-permission-store
+Tue Jun  3 18:48:50 2025    3305    3251 root     fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+Tue Jun  3 18:48:50 2025    3345       2 root     [krfcommd]
+Tue Jun  3 18:48:50 2025    3350    3003 aiegoo   /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+Tue Jun  3 18:48:50 2025    3363    3350 aiegoo   /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+Tue Jun  3 18:48:51 2025    3412    2983 postgres postgres: 17/main: walwriter 
+Tue Jun  3 18:48:51 2025    3413    2983 postgres postgres: 17/main: autovacuum launcher 
+Tue Jun  3 18:48:51 2025    3415    2983 postgres postgres: 17/main: logical replication launcher 
+Tue Jun  3 18:48:51 2025    3497    2669 root     cupsd -f -s /var/snap/cups/common/etc/cups/cups-files.conf -c /var/snap/cups/common/etc/cups/cupsd.conf
+Tue Jun  3 18:48:51 2025    3498    2669 root     cups-proxyd /var/snap/cups/common/run/cups.sock /run/cups/cups.sock -l --logdir /var/snap/cups/1100/var/log
+Tue Jun  3 18:48:51 2025    3706    2668 root     /bin/sh /snap/cups/1100/scripts/run-cups-browsed
+Tue Jun  3 18:48:52 2025    4067    2635 aiegoo   pipewire -c /run/user/1000/crd_audio#wgJkFo9ezn/pipewire.conf
+Tue Jun  3 18:48:52 2025    4068    2635 aiegoo   pipewire -c /run/user/1000/crd_audio#wgJkFo9ezn/pipewire-pulse.conf
+Tue Jun  3 18:48:52 2025    4069    2635 aiegoo   wireplumber -c /run/user/1000/crd_audio#wgJkFo9ezn/wireplumber.conf
+Tue Jun  3 18:48:52 2025    4078    2911 aiegoo   /usr/libexec/gvfsd
+Tue Jun  3 18:48:52 2025    4081    2635 aiegoo   /usr/lib/xorg/Xorg :20 -auth /home/aiegoo/.Xauthority -nolisten tcp -noreset -logfile /dev/null -verbose 3 -configdir /tmp/chrome_remote_desktop_lzocne9x -config /tmp/chrome_remote_desktop_lzocne9x/none
+Tue Jun  3 18:48:52 2025    4092    2911 aiegoo   /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+Tue Jun  3 18:48:53 2025    4165    2635 aiegoo   /opt/google/chrome-remote-desktop/chrome-remote-desktop-host --type=xsession_chooser
+Tue Jun  3 18:48:53 2025    4167    2635 aiegoo   /opt/google/chrome-remote-desktop/chrome-remote-desktop-host --host-config=- --audio-pipe-name=/run/user/1000/crd_audio#wgJkFo9ezn/fifo_output --ssh-auth-sockname=/tmp/chromoting.aiegoo.ssh_auth_sock --signal-parent
+Tue Jun  3 18:48:54 2025    4172       1 aiegoo   /opt/google/chrome-remote-desktop/crashpad-handler --monitor-self-annotation=ptype=crashpad-handler --database=/home/aiegoo/.config/chrome-remote-desktop/crashpad --url=https://clients2.google.com/cr/report --annotation=plat=Linux --annotation=prod=Chromoting_Linux --annotation=ver=135.0.7049.8 --initial-client-fd=4 --shared-client-connection
+Tue Jun  3 18:48:54 2025    4174       1 aiegoo   /opt/google/chrome-remote-desktop/crashpad-handler --monitor-self-annotation=ptype=crashpad-handler --database=/home/aiegoo/.config/chrome-remote-desktop/crashpad --url=https://clients2.google.com/cr/report --annotation=plat=Linux --annotation=prod=Chromoting_Linux --annotation=ver=135.0.7049.8 --initial-client-fd=4 --shared-client-connection
+Tue Jun  3 18:48:54 2025    4207    2911 aiegoo   /usr/libexec/at-spi-bus-launcher
+Tue Jun  3 18:48:54 2025    4210       1 root     /usr/local/bin/cloudflared --no-autoupdate tunnel run --token eyJhIjoiYjZiYzQ4NmNhMzI2ZWZkOWRlMzRlMDZhMDk1YWJmNzEiLCJ0IjoiNjgxZmE3NDktZWVkYi00NmY4LWJhNWMtMzU4ZjA0Y2E0ODQ1IiwicyI6Ik4yWm1PR1UwWVdRdFpERXlOeTAwTXpJNUxXRTJOakF0TkRobVpUTXpNMlV3TldVeiJ9
+Tue Jun  3 18:48:54 2025    4216       1 root     /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+Tue Jun  3 18:48:54 2025    4220       1 root     /usr/share/filebeat/bin/filebeat --environment systemd -c /etc/filebeat/filebeat.yml --path.home /usr/share/filebeat --path.config /etc/filebeat --path.data /var/lib/filebeat --path.logs /var/log/filebeat
+Tue Jun  3 18:48:54 2025    4223       1 kibana   /usr/share/kibana/bin/../node/bin/node /usr/share/kibana/bin/../src/cli/dist --logging.dest=/var/log/kibana/kibana.log --pid.file=/run/kibana/kibana.pid
+Tue Jun  3 18:48:54 2025    4225    4207 aiegoo   /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 10 --address=unix:path=/run/user/1000/at-spi/bus
+Tue Jun  3 18:48:55 2025    4265       1 privoxy  /usr/sbin/privoxy --pidfile /run/privoxy.pid --user privoxy /etc/privoxy/config
+Tue Jun  3 18:48:55 2025    4303       1 kernoops /usr/sbin/kerneloops --test
+Tue Jun  3 18:48:55 2025    4311       1 root     nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+Tue Jun  3 18:48:55 2025    4317    4311 www-data nginx: worker process
+Tue Jun  3 18:48:55 2025    4318    4311 www-data nginx: worker process
+Tue Jun  3 18:48:55 2025    4319    4311 www-data nginx: worker process
+Tue Jun  3 18:48:55 2025    4320    4311 www-data nginx: worker process
+Tue Jun  3 18:48:55 2025    4321    4311 www-data nginx: worker process
+Tue Jun  3 18:48:55 2025    4328    4311 www-data nginx: worker process
+Tue Jun  3 18:48:55 2025    4329    4311 www-data nginx: worker process
+Tue Jun  3 18:48:55 2025    4330    4311 www-data nginx: worker process
+Tue Jun  3 18:48:55 2025    4355    2911 aiegoo   /usr/libexec/at-spi2-registryd --use-gnome-session
+Tue Jun  3 18:48:55 2025    4399       1 kernoops /usr/sbin/kerneloops
+Tue Jun  3 18:48:55 2025    4412       2 root     [kworker/R-iprt-VBoxWQueue]
+Tue Jun  3 18:48:55 2025    4415       2 root     [iprt-VBoxTscThread]
+Tue Jun  3 18:48:55 2025    4449       1 root     /usr/sbin/nmbd --foreground --no-process-group
+Tue Jun  3 18:48:55 2025    4510       1 root     /usr/sbin/smbd --foreground --no-process-group
+Tue Jun  3 18:48:55 2025    4562       1 root     /usr/sbin/vmware-authdlauncher
+Tue Jun  3 18:48:55 2025    4577    4510 root     smbd: notifyd .
+Tue Jun  3 18:48:55 2025    4581    4510 root     smbd: cleanupd 
+Tue Jun  3 18:48:57 2025    5165    3350 aiegoo   /usr/libexec/gnome-session-binary --session=ubuntu
+Tue Jun  3 18:48:59 2025    5708    2911 aiegoo   /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+Tue Jun  3 18:48:59 2025    5743    2911 aiegoo   /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+Tue Jun  3 18:48:59 2025    5747    2911 aiegoo   /usr/libexec/gnome-remote-desktop-daemon
+Tue Jun  3 18:48:59 2025    5749    2911 aiegoo   /usr/libexec/gnome-session-ctl --monitor
+Tue Jun  3 18:48:59 2025    5786    2911 aiegoo   /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+Tue Jun  3 18:49:00 2025    5813    5708 aiegoo   /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+Tue Jun  3 18:49:00 2025    5834    2911 aiegoo   /usr/bin/gnome-shell
+Tue Jun  3 18:49:00 2025    5890    2911 aiegoo   /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+Tue Jun  3 18:49:02 2025    5940       2 root     [nvidia-drm/timeline-1d]
+Tue Jun  3 18:49:02 2025    5942    5834 aiegoo   /usr/libexec/mutter-x11-frames
+Tue Jun  3 18:49:03 2025    5946       1 colord   /usr/libexec/colord
+Tue Jun  3 18:49:05 2025    6067    2911 aiegoo   /usr/libexec/gnome-shell-calendar-server
+Tue Jun  3 18:49:06 2025    6070    2911 aiegoo   /usr/libexec/dconf-service
+Tue Jun  3 18:49:06 2025    6080    2911 aiegoo   /usr/libexec/evolution-source-registry
+Tue Jun  3 18:49:06 2025    6094    2911 aiegoo   /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+Tue Jun  3 18:49:06 2025    6095       1 root     /usr/libexec/upowerd
+Tue Jun  3 18:49:06 2025    6117    2911 aiegoo   /usr/bin/ibus-daemon --panel disable --xim
+Tue Jun  3 18:49:06 2025    6118    2911 aiegoo   /usr/libexec/gsd-a11y-settings
+Tue Jun  3 18:49:06 2025    6123    2911 aiegoo   /usr/libexec/gsd-color
+Tue Jun  3 18:49:06 2025    6127    2911 aiegoo   /usr/libexec/gsd-datetime
+Tue Jun  3 18:49:06 2025    6131    2911 aiegoo   /usr/libexec/gsd-housekeeping
+Tue Jun  3 18:49:06 2025    6135    2911 aiegoo   /usr/libexec/gsd-keyboard
+Tue Jun  3 18:49:06 2025    6138       2 root     [nvidia-drm/timeline-1e]
+Tue Jun  3 18:49:06 2025    6139    2911 aiegoo   /usr/libexec/gsd-media-keys
+Tue Jun  3 18:49:06 2025    6144    2911 aiegoo   /usr/libexec/gsd-power
+Tue Jun  3 18:49:06 2025    6145    2911 aiegoo   /usr/libexec/gsd-print-notifications
+Tue Jun  3 18:49:06 2025    6146    5786 aiegoo   /usr/bin/anydesk --tray
+Tue Jun  3 18:49:06 2025    6147    2911 aiegoo   /usr/libexec/gsd-rfkill
+Tue Jun  3 18:49:06 2025    6157    2911 aiegoo   /usr/libexec/gsd-screensaver-proxy
+Tue Jun  3 18:49:06 2025    6158    2911 aiegoo   /usr/libexec/gsd-sharing
+Tue Jun  3 18:49:06 2025    6161    5786 aiegoo   /usr/libexec/gsd-disk-utility-notify
+Tue Jun  3 18:49:06 2025    6162    2911 aiegoo   /usr/libexec/gsd-smartcard
+Tue Jun  3 18:49:06 2025    6173    5786 aiegoo   /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+Tue Jun  3 18:49:06 2025    6197    2911 aiegoo   /usr/libexec/gsd-sound
+Tue Jun  3 18:49:06 2025    6202    2911 aiegoo   /usr/libexec/gsd-wacom
+Tue Jun  3 18:49:06 2025    6208    2911 aiegoo   /usr/libexec/gsd-xsettings
+Tue Jun  3 18:49:06 2025    6228    5786 aiegoo   /usr/libexec/evolution-data-server/evolution-alarm-notify
+Tue Jun  3 18:49:06 2025    6253    6117 aiegoo   /usr/libexec/ibus-dconf
+Tue Jun  3 18:49:06 2025    6266    6117 aiegoo   /usr/libexec/ibus-extension-gtk3
+Tue Jun  3 18:49:06 2025    6275    2911 aiegoo   /usr/libexec/ibus-x11 --kill-daemon
+Tue Jun  3 18:49:06 2025    6285    2911 aiegoo   /usr/libexec/gsd-printer
+Tue Jun  3 18:49:06 2025    6289    2911 aiegoo   /usr/libexec/ibus-portal
+Tue Jun  3 18:49:06 2025    6294    2911 aiegoo   /usr/libexec/gvfs-udisks2-volume-monitor
+Tue Jun  3 18:49:06 2025    6301    2911 aiegoo   /usr/libexec/goa-daemon
+Tue Jun  3 18:49:06 2025    6395    2911 aiegoo   /usr/libexec/gvfs-afc-volume-monitor
+Tue Jun  3 18:49:07 2025    6418    2911 aiegoo   /usr/libexec/evolution-calendar-factory
+Tue Jun  3 18:49:07 2025    6422    2911 aiegoo   /usr/libexec/gvfs-mtp-volume-monitor
+Tue Jun  3 18:49:07 2025    6432    2911 aiegoo   /usr/libexec/goa-identity-service
+Tue Jun  3 18:49:07 2025    6442    2911 aiegoo   /usr/libexec/gvfs-gphoto2-volume-monitor
+Tue Jun  3 18:49:07 2025    6468    2911 aiegoo   /usr/libexec/gvfs-goa-volume-monitor
+Tue Jun  3 18:49:07 2025    6480    2911 aiegoo   /usr/libexec/evolution-addressbook-factory
+Tue Jun  3 18:49:07 2025    6510    2911 aiegoo   /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+Tue Jun  3 18:49:07 2025    6525    6117 aiegoo   /usr/libexec/ibus-engine-simple
+Tue Jun  3 18:49:07 2025    6534    2911 aiegoo   /usr/libexec/tracker-miner-fs-3
+Tue Jun  3 18:49:08 2025    6595    4078 aiegoo   /usr/libexec/gvfsd-trash --spawner :1.12 /org/gtk/gvfs/exec_spaw/0
+Tue Jun  3 18:49:08 2025    6617    2911 aiegoo   /usr/libexec/xdg-desktop-portal
+Tue Jun  3 18:49:09 2025    6622    2911 aiegoo   /usr/libexec/xdg-desktop-portal-gnome
+Tue Jun  3 18:49:09 2025    6695       1 rtkit    /usr/libexec/rtkit-daemon
+Tue Jun  3 18:49:09 2025    6698    2911 aiegoo   /usr/libexec/xdg-desktop-portal-gtk
+Tue Jun  3 18:49:10 2025    6703    5834 aiegoo   gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com/app
+Tue Jun  3 18:49:10 2025    6814    2911 aiegoo   /usr/libexec/gvfsd-metadata
+Tue Jun  3 18:49:37 2025    7586       1 aiegoo   /usr/bin/x11vnc -forever -loop -noxdamage -display :0 -rfbport 5900
+Tue Jun  3 18:49:38 2025    7733    7586 aiegoo   /usr/bin/x11vnc -forever -loop -noxdamage -display :0 -rfbport 5900
+Tue Jun  3 18:49:52 2025    8180       1 root     /usr/bin/crowdsec -c /etc/crowdsec/config.yaml
+Tue Jun  3 18:49:55 2025    8275    8180 root     journalctl --follow -n 0 _SYSTEMD_UNIT=ssh.service
+Tue Jun  3 18:50:06 2025    8637    5786 aiegoo   /usr/bin/update-notifier
+Tue Jun  3 18:52:53 2025   12512       2 root     [kworker/R-tls-strp]
+Tue Jun  3 18:58:53 2025   15146    2911 aiegoo   tmux
+Tue Jun  3 18:59:26 2025   16082    5834 aiegoo   /usr/bin/xfce4-terminal
+Tue Jun  3 18:59:26 2025   16091    2911 aiegoo   /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+Tue Jun  3 18:59:26 2025   16105   16082 aiegoo   bash
+Tue Jun  3 18:59:26 2025   16121   16105 aiegoo   tmux
+Tue Jun  3 18:59:26 2025   16122   15146 aiegoo   -bash
+Tue Jun  3 19:00:38 2025   17229    5834 aiegoo   /opt/google/chrome/chrome
+Tue Jun  3 19:00:38 2025   17236   17229 aiegoo   cat
+Tue Jun  3 19:00:38 2025   17237   17229 aiegoo   cat
+Tue Jun  3 19:00:38 2025   17242    2911 aiegoo   /opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/aiegoo/.config/google-chrome/Crash Reports --metrics-dir=/home/aiegoo/.config/google-chrome --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 24.04.2 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=136.0.7103.113 --initial-client-fd=5 --shared-client-connection
+Tue Jun  3 19:00:38 2025   17244    2911 aiegoo   /opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/aiegoo/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 24.04.2 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=136.0.7103.113 --initial-client-fd=4 --shared-client-connection
+Tue Jun  3 19:00:38 2025   17250   17229 aiegoo   /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable
+Tue Jun  3 19:00:38 2025   17251   17229 aiegoo   /opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable
+Tue Jun  3 19:00:39 2025   17253   17251 aiegoo   /opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable
+Tue Jun  3 19:00:39 2025   17269       2 root     [nvidia-drm/timeline-1f]
+Tue Jun  3 19:00:39 2025   17285   17250 aiegoo   /opt/google/chrome/chrome --type=gpu-process --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:00:39 2025   17286   17229 aiegoo   /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:00:39 2025   17299       2 root     [nvidia-drm/timeline-20]
+Tue Jun  3 19:00:39 2025   17300   17285 aiegoo   /opt/google/chrome/chrome --type=broker
+Tue Jun  3 19:00:51 2025   17434   17253 aiegoo   /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:00:59 2025   17687   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=15 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=746561127 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:01:01 2025   17719   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=22 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=748444702 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:01:01 2025   17736   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=18 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=748474077 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:01:01 2025   17740   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=17 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=748478519 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:01:01 2025   17766   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=24 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=748687355 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:01:01 2025   17783   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=25 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=748957839 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:01:03 2025   17858   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=26 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=750292102 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:01:04 2025   17887   17229 aiegoo   /opt/google/chrome/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:04:46 2025   20727    2911 aiegoo   /usr/lib/virtualbox/VBoxXPCOMIPCD
+Tue Jun  3 19:04:46 2025   20734    2911 aiegoo   /usr/lib/virtualbox/VBoxSVC --auto-shutdown
+Tue Jun  3 19:05:08 2025   22088       2 root     [kworker/R-dio/sda2]
+Tue Jun  3 19:05:28 2025   23072    3185 aiegoo   /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+Tue Jun  3 19:18:45 2025   38995    5834 aiegoo   /usr/lib/virtualbox/VirtualBox
+Tue Jun  3 19:22:12 2025   41652   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=66 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=2019016525 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Tue Jun  3 19:28:54 2025   46333       1 root     /usr/libexec/fwupd/fwupd
+Tue Jun  3 19:45:22 2025   57756       1 logstash /usr/share/logstash/jdk/bin/java -Xms1g -Xmx1g -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djruby.compile.invokedynamic=true -Djruby.jit.threshold=0 -Djruby.regexp.interruptible=true -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/urandom -Dlog4j2.isThreadContextMapInheritable=true -cp /usr/share/logstash/logstash-core/lib/jars/animal-sniffer-annotations-1.14.jar:/usr/share/logstash/logstash-core/lib/jars/checker-compat-qual-2.0.0.jar:/usr/share/logstash/logstash-core/lib/jars/commons-codec-1.14.jar:/usr/share/logstash/logstash-core/lib/jars/commons-compiler-3.1.0.jar:/usr/share/logstash/logstash-core/lib/jars/commons-logging-1.2.jar:/usr/share/logstash/logstash-core/lib/jars/error_prone_annotations-2.1.3.jar:/usr/share/logstash/logstash-core/lib/jars/google-java-format-1.1.jar:/usr/share/logstash/logstash-core/lib/jars/guava-24.1.1-jre.jar:/usr/share/logstash/logstash-core/lib/jars/j2objc-annotations-1.1.jar:/usr/share/logstash/logstash-core/lib/jars/jackson-annotations-2.9.10.jar:/usr/share/logstash/logstash-core/lib/jars/jackson-core-2.9.10.jar:/usr/share/logstash/logstash-core/lib/jars/jackson-databind-2.9.10.8.jar:/usr/share/logstash/logstash-core/lib/jars/jackson-dataformat-cbor-2.9.10.jar:/usr/share/logstash/logstash-core/lib/jars/jackson-dataformat-yaml-2.9.10.jar:/usr/share/logstash/logstash-core/lib/jars/janino-3.1.0.jar:/usr/share/logstash/logstash-core/lib/jars/javassist-3.26.0-GA.jar:/usr/share/logstash/logstash-core/lib/jars/jruby-complete-9.2.20.1.jar:/usr/share/logstash/logstash-core/lib/jars/jsr305-1.3.9.jar:/usr/share/logstash/logstash-core/lib/jars/log4j-1.2-api-2.17.0.jar:/usr/share/logstash/logstash-core/lib/jars/log4j-api-2.17.0.jar:/usr/share/logstash/logstash-core/lib/jars/log4j-core-2.17.0.jar:/usr/share/logstash/logstash-core/lib/jars/log4j-jcl-2.17.0.jar:/usr/share/logstash/logstash-core/lib/jars/log4j-slf4j-impl-2.17.0.jar:/usr/share/logstash/logstash-core/lib/jars/logstash-core.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.core.commands-3.6.0.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.core.contenttype-3.4.100.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.core.expressions-3.4.300.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.core.filesystem-1.3.100.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.core.jobs-3.5.100.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.core.resources-3.7.100.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.core.runtime-3.7.0.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.equinox.app-1.3.100.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.equinox.common-3.6.0.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.equinox.preferences-3.4.1.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.equinox.registry-3.5.101.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.jdt.core-3.10.0.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.osgi-3.7.1.jar:/usr/share/logstash/logstash-core/lib/jars/org.eclipse.text-3.5.101.jar:/usr/share/logstash/logstash-core/lib/jars/reflections-0.9.11.jar:/usr/share/logstash/logstash-core/lib/jars/slf4j-api-1.7.30.jar:/usr/share/logstash/logstash-core/lib/jars/snakeyaml-1.23.jar org.logstash.Logstash --path.settings /etc/logstash
+Tue Jun  3 21:19:58 2025  110772       2 root     [nvidia-drm/timeline-21]
+Tue Jun  3 21:19:58 2025  110783    4078 aiegoo   /usr/libexec/gvfsd-network --spawner :1.12 /org/gtk/gvfs/exec_spaw/1
+Tue Jun  3 21:19:58 2025  110792    4078 aiegoo   /usr/libexec/gvfsd-smb-browse --spawner :1.12 /org/gtk/gvfs/exec_spaw/2
+Tue Jun  3 21:19:59 2025  110812    4078 aiegoo   /usr/libexec/gvfsd-dnssd --spawner :1.12 /org/gtk/gvfs/exec_spaw/3
+Wed Jun  4 07:39:27 2025  410232    2911 aiegoo   /usr/bin/gnome-text-editor /home/aiegoo/Downloads/data_logs_small_no_time_1.data.ndjson
+Wed Jun  4 07:39:28 2025  410263       2 root     [nvidia-drm/timeline-22]
+Wed Jun  4 13:53:54 2025  588482       2 root     [nvidia-drm/timeline-23]
+Wed Jun  4 15:36:25 2025  639835   15146 aiegoo   -bash
+Wed Jun  4 15:39:45 2025  642685    2911 aiegoo   /usr/libexec/gnome-terminal-server
+Wed Jun  4 15:39:46 2025  642697  642685 aiegoo   bash
+Wed Jun  4 15:39:46 2025  642712  642697 aiegoo   tmux
+Wed Jun  4 15:39:46 2025  642713   15146 aiegoo   -bash
+Wed Jun  4 16:11:32 2025  662196    2731 aiegoo   /usr/bin/anydesk --backend
+Wed Jun  4 16:15:16 2025  664841    2911 aiegoo   /usr/bin/snap userd
+Wed Jun  4 16:20:15 2025  668204   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=1743 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=77502415101 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Wed Jun  4 21:44:36 2025  839954       1 root     python3 /usr/lib/software-properties/software-properties-dbus
+Wed Jun  4 21:44:38 2025  840350       1 root     /usr/libexec/ubuntu-advantage-desktop-daemon
+Wed Jun  4 23:03:39 2025  880084   15146 aiegoo   -bash
+Wed Jun  4 23:10:03 2025  885715    2911 aiegoo   /usr/bin/nautilus --gapplication-service
+Wed Jun  4 23:10:04 2025  885743       2 root     [nvidia-drm/timeline-28]
+Wed Jun  4 23:10:04 2025  885753    4078 aiegoo   /usr/libexec/gvfsd-recent --spawner :1.12 /org/gtk/gvfs/exec_spaw/10
+Wed Jun  4 23:45:23 2025  907367   15146 aiegoo   -bash
+Thu Jun  5 01:52:01 2025  974995       2 root     [kworker/R-uas]
+Thu Jun  5 09:55:36 2025 1213789   15146 aiegoo   -bash
+Thu Jun  5 11:16:13 2025 1255040   15146 aiegoo   -bash
+Thu Jun  5 21:55:51 2025 1609420  642685 aiegoo   bash
+Thu Jun  5 21:55:52 2025 1609434 1609420 aiegoo   tmux
+Thu Jun  5 21:55:52 2025 1609435   15146 aiegoo   -bash
+Thu Jun  5 22:26:29 2025 1631257  642685 aiegoo   bash
+Thu Jun  5 22:26:29 2025 1631270 1631257 aiegoo   tmux
+Thu Jun  5 22:26:29 2025 1631271   15146 aiegoo   -bash
+Thu Jun  5 22:52:45 2025 1656313    5834 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --password-store=basic --disable-features=TFLiteLanguageDetectionEnabled
+Thu Jun  5 22:52:48 2025 1656452    2911 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/aiegoo/snap/chromium/common/chromium/Crash Reports --annotation=channel=snap --annotation=lsb-release=Ubuntu Core 22 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=137.0.7151.55 --initial-client-fd=5 --shared-client-connection
+Thu Jun  5 22:52:48 2025 1656454    2911 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/aiegoo/snap/chromium/common/chromium/Crash Reports --annotation=channel=snap --annotation=lsb-release=Ubuntu Core 22 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=137.0.7151.55 --initial-client-fd=4 --shared-client-connection
+Thu Jun  5 22:52:48 2025 1656458 1656313 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=zygote --no-zygote-sandbox --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable
+Thu Jun  5 22:52:48 2025 1656459 1656313 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=zygote --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable
+Thu Jun  5 22:52:48 2025 1656461 1656459 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=zygote --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable
+Thu Jun  5 22:52:49 2025 1656531 1656458 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=gpu-process --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Thu Jun  5 22:52:49 2025 1656542 1656313 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Thu Jun  5 22:52:49 2025 1656553 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Thu Jun  5 22:52:49 2025 1656576       2 root     [nvidia-drm/timeline-2e]
+Thu Jun  5 22:52:49 2025 1656577       2 root     [nvidia-drm/timeline-2f]
+Thu Jun  5 22:52:49 2025 1656590 1656531 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=broker
+Fri Jun  6 15:43:30 2025 2393550  642685 aiegoo   bash
+Fri Jun  6 15:43:30 2025 2393563 2393550 aiegoo   tmux
+Fri Jun  6 15:43:30 2025 2393564   15146 aiegoo   -bash
+Fri Jun  6 16:02:46 2025 2410682 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=renderer --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=30 --time-ticks-at-unix-epoch=-1748944113969315 --launch-time-ticks=249253870630 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Fri Jun  6 16:03:09 2025 2410981 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=renderer --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=31 --time-ticks-at-unix-epoch=-1748944113969315 --launch-time-ticks=249276283616 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Fri Jun  6 16:03:10 2025 2411018 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=renderer --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=32 --time-ticks-at-unix-epoch=-1748944113969315 --launch-time-ticks=249277185620 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Fri Jun  6 16:03:10 2025 2411029 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=renderer --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=33 --time-ticks-at-unix-epoch=-1748944113969315 --launch-time-ticks=249277790763 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Fri Jun  6 16:03:11 2025 2411038 1656313 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Fri Jun  6 16:03:47 2025 2411545 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=renderer --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=37 --time-ticks-at-unix-epoch=-1748944113969315 --launch-time-ticks=249314735069 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Fri Jun  6 21:27:51 2025 2698029  642685 aiegoo   bash
+Fri Jun  6 21:27:51 2025 2698042 2698029 aiegoo   tmux
+Fri Jun  6 21:27:51 2025 2698043   15146 aiegoo   -bash
+Fri Jun  6 21:55:50 2025 2727527       2 root     [psimon]
+Fri Jun  6 21:55:50 2025 2727880       1 root     /usr/lib/postfix/sbin/master -w
+Fri Jun  6 21:55:50 2025 2727882 2727880 postfix  qmgr -l -t unix -u
+Fri Jun  6 21:55:59 2025 2737815       1 syslog   /usr/sbin/rsyslogd -n -iNONE
+Fri Jun  6 23:01:37 2025 2992512       1 wazuh-d+ /usr/share/wazuh-dashboard/node/bin/node --no-warnings --max-http-header-size=65536 --unhandled-rejections=warn /usr/share/wazuh-dashboard/src/cli/dist
+Fri Jun  6 23:01:43 2025 2992680       1 wazuh-i+ /usr/share/wazuh-indexer/jdk/bin/java -Xshare:auto -Dopensearch.networkaddress.cache.ttl=60 -Dopensearch.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -XX:+ShowCodeDetailsInExceptionMessages -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.security.manager=allow -Djava.locale.providers=SPI,COMPAT -Xms1024m -Xmx1024m -XX:+UseG1GC -XX:G1ReservePercent=25 -XX:InitiatingHeapOccupancyPercent=30 -Djava.io.tmpdir=/var/lib/wazuh-indexer/tmp -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/lib/wazuh-indexer -XX:ErrorFile=/var/log/wazuh-indexer/hs_err_pid%p.log -Xlog:gc*,gc+age=trace,safepoint:file=/var/log/wazuh-indexer/gc.log:utctime,pid,tags:filecount=32,filesize=64m -Djava.security.manager=allow -Djava.util.concurrent.ForkJoinPool.common.threadFactory=org.opensearch.secure_sm.SecuredForkJoinWorkerThreadFactory -Dclk.tck=100 -Djdk.attach.allowAttachSelf=true -Djava.security.policy=file:///etc/wazuh-indexer/opensearch-performance-analyzer/opensearch_security.policy --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -XX:MaxDirectMemorySize=536870912 -Dopensearch.path.home=/usr/share/wazuh-indexer -Dopensearch.path.conf=/etc/wazuh-indexer -Dopensearch.distribution.type=deb -Dopensearch.bundled_jdk=true -cp /usr/share/wazuh-indexer/lib/* org.opensearch.bootstrap.OpenSearch -p /run/wazuh-indexer/wazuh-indexer.pid --quiet
+Sat Jun  7 09:13:31 2025 3620634   20734 aiegoo   /usr/lib/virtualbox/VirtualBoxVM --comment TargetPC_default_1748692326668_39458 --startvm 3806bdb9-ac44-4fa8-8a77-356607623c71 --no-startvm-errormsgbox
+Sat Jun  7 09:14:50 2025 3622001   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6873 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=311177228624 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 09:25:02 2025 3633226   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6892 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=311789761490 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 09:28:59 2025 3636952   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6896 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=312026785650 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 09:29:03 2025 3637067   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6899 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=312030058319 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 10:30:02 2025 3699485   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6978 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=315689754350 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 10:42:13 2025 3712557   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6999 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=316420577986 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 10:58:50 2025 3729905 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=renderer --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=600 --time-ticks-at-unix-epoch=-1748944113969315 --launch-time-ticks=317417754099 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Sat Jun  7 10:58:51 2025 3729913 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=renderer --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=601 --time-ticks-at-unix-epoch=-1748944113969315 --launch-time-ticks=317418162336 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Sat Jun  7 17:14:34 2025 4116149   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7533 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=339961829092 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 18:09:30 2025 4172326   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7606 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=343257117542 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 18:09:34 2025 4172465   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --extension-process --init-isolate-as-foreground --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7609 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=343261663485 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 18:09:34 2025 4172485   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --pdf-renderer --lang=en-US --js-flags=--jitless --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7610 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=343261771434 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sat Jun  7 18:45:17 2025   15974    6146 aiegoo   /usr/bin/anydesk --frontend
+Sat Jun  7 23:02:54 2025  282642    2911 aiegoo   /usr/lib/libreoffice/program/oosplash --writer file:///home/aiegoo/Downloads/how%20to%20install%20wazuh%20agent.docx
+Sat Jun  7 23:02:54 2025  282659  282642 aiegoo   /usr/lib/libreoffice/program/soffice.bin --writer file:///home/aiegoo/Downloads/how%20to%20install%20wazuh%20agent.docx --splash-pipe=5
+Sun Jun  8 00:00:00 2025  341071       1 root     /usr/sbin/cupsd -l
+Sun Jun  8 00:00:01 2025  341073  341071 lp       /usr/lib/cups/notifier/dbus dbus://
+Sun Jun  8 00:00:01 2025  341075       1 cups-br+ /usr/sbin/cups-browsed
+Sun Jun  8 06:47:11 2025  757962    2911 aiegoo   /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+Sun Jun  8 10:52:43 2025 1008219       2 root     [kworker/1:1-cgroup_destroy]
+Sun Jun  8 11:20:00 2025 1035402       2 root     [kworker/4:0-cgroup_destroy]
+Sun Jun  8 11:21:52 2025 1037941       2 root     [kworker/u32:4-flush-8:0]
+Sun Jun  8 11:48:53 2025 1065449    3706 root     sleep 3600
+Sun Jun  8 11:54:08 2025 1070475       2 root     [kworker/u32:1-events_power_efficient]
+Sun Jun  8 12:01:11 2025 1078514       2 root     [kworker/6:2-events]
+Sun Jun  8 12:03:02 2025 1080267       2 root     [kworker/2:1-cgroup_destroy]
+Sun Jun  8 12:04:53 2025 1082008       2 root     [kworker/3:2-events]
+Sun Jun  8 12:06:07 2025 1083210       2 root     [kworker/7:1-cgroup_destroy]
+Sun Jun  8 12:07:39 2025 1084653       2 root     [kworker/1:0-cgroup_destroy]
+Sun Jun  8 12:08:00 2025 1084997 2727880 postfix  cleanup -z -t unix -u -c
+Sun Jun  8 12:08:00 2025 1084998 2727880 postfix  local -t unix
+Sun Jun  8 12:08:16 2025 1085255       2 root     [kworker/6:0-cgroup_destroy]
+Sun Jun  8 12:09:06 2025 1086038       2 root     [kworker/5:2-events]
+Sun Jun  8 12:10:15 2025 1087134       2 root     [kworker/u32:5-events_unbound]
+Sun Jun  8 12:10:25 2025 1087317       2 root     [kworker/2:2-events]
+Sun Jun  8 12:12:00 2025 1088825 2727880 postfix  pickup -l -t unix -u -c
+Sun Jun  8 12:12:00 2025 1088826 2727880 postfix  trivial-rewrite -n rewrite -t unix -u -c
+Sun Jun  8 12:13:47 2025 1090547       2 root     [kworker/0:1-events]
+Sun Jun  8 12:15:47 2025 1093774       2 root     [kworker/u32:0-ext4-rsv-conversion]
+Sun Jun  8 12:15:48 2025 1093775    5834 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox
+Sun Jun  8 12:15:49 2025 1093954 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/crashhelper 1093775 9 /tmp/ 10 12
+Sun Jun  8 12:15:50 2025 1094071       2 root     [nvidia-drm/timeline-34]
+Sun Jun  8 12:15:50 2025 1094087 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -parentBuildID 20250529220913 -prefsHandle 0:34918 -prefMapHandle 1:270953 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {a7c12bf0-2d5d-414a-a6a0-f2433ac7559b} -parentPid 1093775 -crashReporter 5 -crashHelperPid 1093954 -appDir /snap/firefox/6259/usr/lib/firefox/browser 1 socket
+Sun Jun  8 12:15:51 2025 1094118 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:34983 -prefMapHandle 1:270953 -jsInitHandle 2:245828 -parentBuildID 20250529220913 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {b5fab4bc-cbef-41d5-860e-b1ce0018f211} -parentPid 1093775 -crashReporter 6 -crashHelperPid 1093954 -greomni /snap/firefox/6259/usr/lib/firefox/omni.ja -appomni /snap/firefox/6259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/6259/usr/lib/firefox/browser 2 tab
+Sun Jun  8 12:15:51 2025 1094122 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -parentBuildID 20250529220913 -prefsHandle 0:34983 -prefMapHandle 1:270953 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {3104c99e-9965-4e74-9704-043e15d259c7} -parentPid 1093775 -crashReporter 5 -crashHelperPid 1093954 -appDir /snap/firefox/6259/usr/lib/firefox/browser 3 rdd
+Sun Jun  8 12:15:51 2025 1094160 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:35063 -prefMapHandle 1:270953 -jsInitHandle 2:245828 -parentBuildID 20250529220913 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {45623cf3-ebad-463c-98ab-a16ca7374389} -parentPid 1093775 -crashReporter 6 -crashHelperPid 1093954 -greomni /snap/firefox/6259/usr/lib/firefox/omni.ja -appomni /snap/firefox/6259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/6259/usr/lib/firefox/browser 4 tab
+Sun Jun  8 12:15:53 2025 1094368 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -parentBuildID 20250529220913 -sandboxingKind 0 -prefsHandle 0:44339 -prefMapHandle 1:270953 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {26fc6404-f816-4ee8-9fb5-0b26f7f80489} -parentPid 1093775 -crashReporter 5 -crashHelperPid 1093954 -appDir /snap/firefox/6259/usr/lib/firefox/browser 5 utility
+Sun Jun  8 12:15:53 2025 1094373 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:40403 -prefMapHandle 1:270953 -jsInitHandle 2:245828 -parentBuildID 20250529220913 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {29e5d8ab-b5aa-4a76-804e-5e8054574961} -parentPid 1093775 -crashReporter 6 -crashHelperPid 1093954 -greomni /snap/firefox/6259/usr/lib/firefox/omni.ja -appomni /snap/firefox/6259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/6259/usr/lib/firefox/browser 6 tab
+Sun Jun  8 12:16:16 2025 1094926       2 root     [kworker/4:2-events]
+Sun Jun  8 12:16:23 2025 1095086       2 root     [kworker/u32:3-flush-8:0]
+Sun Jun  8 12:16:35 2025 1095371       2 root     [kworker/3:1-cgroup_destroy]
+Sun Jun  8 12:17:30 2025 1096762       2 root     [kworker/1:3-events]
+Sun Jun  8 12:17:49 2025 1097228       2 root     [kworker/0:3-cgroup_destroy]
+Sun Jun  8 12:18:26 2025 1098070       2 root     [kworker/2:0-cgroup_destroy]
+Sun Jun  8 12:19:21 2025 1099096       2 root     [kworker/6:3-cgroup_destroy]
+Sun Jun  8 12:19:58 2025 1099754       2 root     [kworker/5:1-events]
+Sun Jun  8 12:20:00 2025 1099790       2 root     [kworker/7:2-dio/sda2]
+Sun Jun  8 12:20:53 2025 1100781 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:40785 -prefMapHandle 1:270953 -jsInitHandle 2:245828 -parentBuildID 20250529220913 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {00d5503f-b070-4455-b657-ae3996c63391} -parentPid 1093775 -crashReporter 6 -crashHelperPid 1093954 -greomni /snap/firefox/6259/usr/lib/firefox/omni.ja -appomni /snap/firefox/6259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/6259/usr/lib/firefox/browser 10 tab
+Sun Jun  8 12:20:54 2025 1100784 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:40785 -prefMapHandle 1:270953 -jsInitHandle 2:245828 -parentBuildID 20250529220913 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {4c7906d2-6999-49cc-a156-b3d6b2154f50} -parentPid 1093775 -crashReporter 6 -crashHelperPid 1093954 -greomni /snap/firefox/6259/usr/lib/firefox/omni.ja -appomni /snap/firefox/6259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/6259/usr/lib/firefox/browser 11 tab
+Sun Jun  8 12:20:57 2025 1100876 1093775 aiegoo   /snap/firefox/6259/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:40785 -prefMapHandle 1:270953 -jsInitHandle 2:245828 -parentBuildID 20250529220913 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {48c92315-01cc-4f1d-94be-d658e67d5a8f} -parentPid 1093775 -crashReporter 6 -crashHelperPid 1093954 -greomni /snap/firefox/6259/usr/lib/firefox/omni.ja -appomni /snap/firefox/6259/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/6259/usr/lib/firefox/browser 12 tab
+Sun Jun  8 12:21:43 2025 1101677       2 root     [kworker/4:1]
+Sun Jun  8 12:23:58 2025 1103815       2 root     [kworker/0:0]
+Sun Jun  8 12:23:58 2025 1103816       2 root     [kworker/0:2-events]
+Sun Jun  8 12:24:05 2025 1103924       2 root     [kworker/u32:2]
+Sun Jun  8 12:24:05 2025 1103925       2 root     [kworker/u32:6-events_unbound]
+Sun Jun  8 12:24:16 2025 1104112       2 root     [kworker/1:2-cgroup_destroy]
+Sun Jun  8 12:25:02 2025 1104843   17253 aiegoo   /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=17242 --enable-crash-reporter=307beb7b-59dc-4b36-acef-171efb125cfb, --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=8999 --time-ticks-at-unix-epoch=-1748944113969316 --launch-time-ticks=408989778168 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14116618413531088006,17051738636148213802,262144 --variations-seed-version=20250602-180031.132000
+Sun Jun  8 12:25:29 2025 1105316       2 root     [kworker/7:0-cgroup_destroy]
+Sun Jun  8 12:25:49 2025 1105635       2 root     [kworker/6:1-cgroup_destroy]
+Sun Jun  8 12:26:26 2025 1106247       2 root     [kworker/7:3-events]
+Sun Jun  8 12:26:44 2025 1106540       2 root     [kworker/3:0]
+Sun Jun  8 12:27:03 2025 1106833       2 root     [kworker/4:3-cgroup_destroy]
+Sun Jun  8 12:27:20 2025 1107121       2 root     [kworker/5:0-events]
+Sun Jun  8 12:27:59 2025 1107715 1656461 aiegoo   /snap/chromium/3153/usr/lib/chromium-browser/chrome --type=renderer --crashpad-handler-pid=1656452 --enable-crash-reporter=,snap --extension-process --change-stack-guard-on-fork=enable --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=1364 --time-ticks-at-unix-epoch=-1748944113969315 --launch-time-ticks=409166135458 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,17423955168789594170,11283867363934569792,262144 --disable-features=TFLiteLanguageDetectionEnabled --variations-seed-version
+Sun Jun  8 12:28:03 2025 1107806 2393564 aiegoo   ps -eo lstart,pid,ppid,user,cmd --sort=start_time
