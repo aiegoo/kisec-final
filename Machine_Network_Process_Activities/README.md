@@ -53,7 +53,7 @@ Each file was generated as part of the **Investigation**, covering persistence m
   → Continuation of above recheck with more detailed behavioral analysis or PID tracking.
 
 - **Malcheck_3.txt**  
-  → Final phase of malware binary check results using tools like `clamscan`, hash matching, or IOC validation.
+  → Final phase of malware binary check results after clean backdoor and fix the system.
 
 - **traceout_files_dropped_by_malware.txt**  
   → Tracks files created by the malware or dropped during execution (used for IOC extraction).
