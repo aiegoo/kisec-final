@@ -21,7 +21,7 @@ Each file was generated as part of the **Investigation**, covering persistence m
   → Lists all open network-related files using `lsof -i -n -P` to correlate live connections to file descriptors.
 
 - **network_details.txt**  
-  → Network interface details and IP configuration used to confirm system exposure.
+  → Network interface details and IP configuration used to check system exposure still on live or not.
 
 - **anydesk_pid_trace.txt**  
   → Traces specific process IDs linked to suspicious AnyDesk sessions possibly leveraged post-compromise.
