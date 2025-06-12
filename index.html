@@ -19,6 +19,116 @@
           <textarea data-template>
             <!-- slides.md -->
 
+# Host Compromise Investigation
+
+---
+
+## 📋 Executive Summary
+
+- Chromium Snap package vulnerability exploitation led to malicious payload delivery
+- Pre-existing Jenkins user account hijacked for establishing persistence
+- Mumblehard malware deployed to `/dev/shm/duet` targeting c3pool.org
+- BPFDoor rootkit implanted for kernel-level persistence and backdoor access
+
+---
+
+## 💻 Compromised System Details
+
+- Ubuntu 24.04.2 LTS Noble
+- Kernel Version: 6.11.0
+- Compromised User: Jenkins
+- CVEs Identified: 3
+
+---
+
+## ⏱️ Attack Chain Timeline
+
+1. Chromium Snap vulnerability exploited to drop malicious loader
+2. Jenkins user account hijacked as execution context
+3. Mumblehard Miner & BPFDoor backdoor installed via scheduled tasks
+4. Cron job created for continuous mining operations
+5. BPFDoor rootkit + data exfiltration to mining pool
+6. AnyDesk credentials compromised for remote access
+
+---
+
+## 🦠 Malware Artifacts Discovered
+
+- Mumblehard Miner: Crypto mining malware (**HIGH IMPACT**)
+- BPFDoor Rootkit: Kernel-level backdoor (**STEALTH**)
+- Malicious Cron Job:
+  ```
+  * * * * * /usr/bin/flock -n /var/tmp/verl.lock -c 'cd /dev/shm/duet; exec ./app ...'
+  ```
+- Rootkit Detection Evidence:
+  ```
+  /proc/1656590/stack:[<0>] unix_seqpacket_recvmsg+0x43/0x70
+  ```
+
+---
+
+## 🕵️ BPFDoor Rootkit Analysis
+
+- Detection Method: Kernel stack analysis revealing `unix_seqpacket_recvmsg` hooks
+- Technology: eBPF-based kernel module for stealth operations
+- eBPF Programs Identified:
+  ```
+  2039: cgroup_skb  name sd_fw_ingress  tag 6deef7357e7b4530  gpl
+  2040: cgroup_device  name sd_devices  tag c8b47a902f1cc68b  gpl
+  ```
+
+---
+
+## 🔬 Forensic Investigation Methodology
+
+- Vulnerability assessment protocols
+- Malware detection and analysis techniques
+- Rootkit identification methodologies
+- System integrity verification processes
+
+---
+
+## 🛡️ Comprehensive Remediation
+
+- Mumblehard miner binaries purged
+- BPFDoor rootkit completely removed
+- All malicious cron jobs deleted
+- Jenkins user activities cleared
+
+---
+
+## 🎓 Key Lessons Learned
+
+- Snap-based applications represent significant attack surfaces
+- Kernel-level eBPF-based rootkits are increasing in Linux environments
+- Scheduled cron jobs remain highly effective persistence mechanisms
+
+---
+
+## 🚀 Future Security Recommendations
+
+- Complete clean OS installation with data backup
+- Enable system-wide application confinement
+- Reduce Snap package usage
+- Establish automated kernel update monitoring
+
+---
+
+## 📚 Investigation Documentation
+
+- [GitHub Wiki](https://github.com/aiegoo/siem): Comprehensive investigation architecture and methodology
+
+---
+
+## ✅ Investigation Complete
+
+- 100% Malware Removed
+- 0 Active Threats
+- Full System Integrity
+- 24/7 SIEM Monitoring
+
+---
+
 # Presence Before and After
 Identity is not a login — it's a shadow that moves with the user
 Note:
