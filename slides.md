@@ -1,4 +1,9 @@
-<!-- slides.md -->
+<!-- .slide: data-state="slide-config" -->
+<!--
+revealOptions:
+  slideNumber: true
+  transition: fade
+-->
 
 # Host Compromise Investigation
 
@@ -149,4 +154,13 @@ In quantum mechanics, particles don’t have states until observed. Our system b
 No perimeter, no gateway — only confidence in the origin of motion
 Note:
 Perimeters have dissolved. There are no more walls, only waves. Trust must now travel with the entity...
+
+---
+
+<!-- Section Breaker GIF -->
+<div style="text-align:center;">
+  <img src="assets/breaker.gif" alt="Section Breaker" style="max-width:70%;"/>
+</div>
+
+---
 
