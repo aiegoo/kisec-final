@@ -1,8 +1,36 @@
 title: KISEC Final Project
-description: Security Assessment and Investigation Presentations
+description: Security Assessment and SIEM Implementation Presentation
+baseurl: ""
+url: "https://aiegoo.github.io"
 theme: jekyll-theme-minimal
+
+# GitHub Pages settings
 plugins:
   - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
 relative_links:
   enabled: true
   collections: true
+
+# Reveal.js settings
+markdown: kramdown
+highlighter: rouge
+
+# Include reveal.js files
+include:
+  - dist/
+  - plugin/
+  - css/
+  - theme/
+  - assets/
+
+# Exclude unnecessary files
+exclude:
+  - .vagrant/
+  - Vagrantfile
+  - README.md
+  - .gitignore
+  - node_modules/

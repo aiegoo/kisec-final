@@ -1,0 +1,35 @@
+{
+  "name": "kisec-final-project",
+  "version": "1.0.0",
+  "description": "KISEC Final Project - Security Assessment and SIEM Implementation Presentation",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "build": "echo 'Build completed - static files ready for deployment'",
+    "dev": "npx http-server -p 3000 -o",
+    "serve": "npx http-server -p 8080",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiegoo/siem.git"
+  },
+  "keywords": [
+    "security",
+    "siem",
+    "presentation",
+    "reveal.js",
+    "cybersecurity",
+    "kisec"
+  ],
+  "author": "KISEC Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "gh-pages": "^6.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

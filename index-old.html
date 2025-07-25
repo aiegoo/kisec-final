@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown data-separator="\r?\n---\r?\n" data-separator-vertical="\r?\n----\r?\n">
+          <textarea data-template>
+            <!-- .slide: data-state="slide-config" -->
+<!--
+revealOptions:
+  slideNumber: true
+  transition: fade
+-->
+
+---
+# Future
+---
+
+# SIEM Architecture Flow
+<!-- .element: class="r-fit-text" -->
+
+<div class="architecture-diagram">
+  <div class="arch-node" data-fragment-index="1">
+    <div class="node-box">User Devices</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="1">↓</div>
+  
+  <div class="arch-node" data-fragment-index="2">
+    <div class="node-box">Sysmon /<br/>Auditd Logs</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="2">↓</div>
+  
+  <div class="arch-node" data-fragment-index="3">
+    <div class="node-box">Wazuh Agent<br/>(Log Collection &<br/>Local Rule Matching)</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="3">↓</div>
+  
+  <div class="arch-node" data-fragment-index="4">
+    <div class="node-box">Wazuh Manager<br/>(Ruleset, Alerts, etc.)</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="4">↓</div>
+  
+  <div class="arch-node" data-fragment-index="5">
+    <div class="node-box">OpenSearch Stack<br/>(Log Indexing & Search)</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="5">↓</div>
+  
+  <div class="arch-node" data-fragment-index="6">
+    <div class="node-box">Python Parser Layer<br/>(Normalize JSON Alerts)</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="6">↓</div>
+  
+  <div class="arch-split" data-fragment-index="7">
+    <div class="arch-branch">
+      <div class="node-box">TinyLLaMA</div>
+    </div>
+    <div class="arch-branch">
+      <div class="node-box">MiniGPT-4</div>
+    </div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="7">↓</div>
+  
+  <div class="arch-node" data-fragment-index="8">
+    <div class="node-box">n8n Workflow<br/>(Alert Routing)</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="8">↓</div>
+  
+  <div class="arch-node" data-fragment-index="9">
+    <div class="node-box">RASA NLU<br/>(Intent +<br/>context)</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="9">↓</div>
+  
+  <div class="arch-node" data-fragment-index="10">
+    <div class="node-box">TheHive / Cortex<br/>- Alert creation<br/>- Analyzer suggestions<br/>- Responder integration</div>
+  </div>
+  <div class="arch-arrow" data-fragment-index="10">↓</div>
+  
+  <div class="arch-node" data-fragment-index="11">
+    <div class="node-box">SOC Analyst Dashboard</div>
+  </div>
+</div>
+
+<style>
+.architecture-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.arch-node {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.6s ease;
+}
+
+.arch-node.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.node-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #4ecdc4;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 200px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.arch-arrow {
+  font-size: 24px;
+  color: #4ecdc4;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.arch-arrow.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arch-split {
+  display: flex;
+  gap: 40px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.6s ease;
+}
+
+.arch-split.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.arch-branch .node-box {
+  min-width: 150px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+}
+</style>
+
+Note:
+This diagram shows our complete SIEM architecture flow, from user devices all the way down to the SOC analyst dashboard. Each component will animate in sequence as we click through, showing the data flow from collection to analysis to response.
+
+---
+
+# Presence Before and After
+Identity is not a login — it's a shadow that moves with the user
+Note:
+We often ask who is trying to access the system — but rarely when, from where, and in what state...
+
+---
+
+# Environment
+The quiet context: IP, hardware, entropy — all whisper who you are
+Note:
+The machine doesn’t care about names. It notices voltages, entropy, keystroke rhythms...
+
+---
+
+# Forms Nowhere, Now Everywhere
+Authentication without asking — the body speaks before the mouth
+Note:
+The old model asked us to prove ourselves — but now, the proof is already here...
+
+---
+
+# Signals
+A capsule signed by reality, decoded by trust
+Note:
+All these signals — the capsule — are bundled into a signed whisper. The system listens...
+
+---
+
+# Superposition of Presence
+You exist, and don’t — until the system observes your trace
+Note:
+In quantum mechanics, particles don’t have states until observed. Our system borrows this metaphor...
+
+---
+
+# Trust Begins Where the Wire Ends
+No perimeter, no gateway — only confidence in the origin of motion
+Note:
+Perimeters have dissolved. There are no more walls, only waves. Trust must now travel with the entity...
+
+---
+
+#### THE END
+            
+---
+
+
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"_":["slides.md"],"static":"dist"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+      
+      // Handle architecture diagram animations
+      Reveal.addEventListener('fragmentshown', function(event) {
+        const fragmentIndex = event.fragment.getAttribute('data-fragment-index');
+        if (fragmentIndex) {
+          const elements = document.querySelectorAll(`[data-fragment-index="${fragmentIndex}"]`);
+          elements.forEach(el => {
+            el.classList.add('visible');
+          });
+        }
+      });
+      
+      Reveal.addEventListener('fragmenthidden', function(event) {
+        const fragmentIndex = event.fragment.getAttribute('data-fragment-index');
+        if (fragmentIndex) {
+          const elements = document.querySelectorAll(`[data-fragment-index="${fragmentIndex}"]`);
+          elements.forEach(el => {
+            el.classList.remove('visible');
+          });
+        }
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) {
+        mermaid.init(mermaidOptions, '.stack.present > .present pre code.mermaid');
+        mermaid.init(mermaidOptions, '.slides > .present:not(.stack) pre code.mermaid');
+      }
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
+    </script>
+  </body>
+</html>
