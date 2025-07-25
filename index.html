@@ -12,39 +12,57 @@
     <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
     <link rel="stylesheet" href="./plugin/highlight/monokai.css" />
     
+    <!-- Additional plugin CSS from CDN -->
+    <!-- Temporarily disabled for troubleshooting -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@4.1.5/chalkboard/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+    
     <!-- Custom CSS for architecture diagram -->
     <style>
-      .siem-architecture-container {
-        display: flex;
-        height: 70vh;
-        gap: 20px;
-        margin: 20px 0;
-      }
-
-      .architecture-display {
-        flex: 1;
+      #siem-architecture-slide {
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(0, 0, 0, 0.3);
+      }
+
+      .siem-container {
+        display: flex;
+        height: 60vh;
+        width: 85vw;
+        gap: 15px;
+        margin: 10px 0;
+        transform: scale(0.9);
+        transform-origin: center;
+      }
+
+      .main-display {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.8);
         border-radius: 15px;
         border: 2px solid rgba(78, 205, 196, 0.3);
         position: relative;
         overflow: hidden;
       }
 
-      .arch-main-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      .architecture-card {
+        background: #000000;
         border: 3px solid #4ecdc4;
         border-radius: 20px;
-        padding: 40px;
-        color: white;
+        padding: 30px;
+        color: #00ff00;
         text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        min-width: 300px;
-        max-width: 400px;
-        min-height: 200px;
+        font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+        font-size: 16px;
+        font-weight: normal;
+        width: 350px;
+        height: 200px;
         box-shadow: 0 8px 30px rgba(0,0,0,0.4);
         transform: scale(0.8);
         opacity: 0;
@@ -53,83 +71,108 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+        position: relative;
       }
 
-      .arch-main-card.visible {
+      .architecture-card.visible {
         opacity: 1;
         transform: scale(1);
       }
 
-      .arch-main-card.highlight {
+      .architecture-card.highlight {
         border-color: #ff6b6b;
         box-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
         transform: scale(1.05);
       }
 
-      .arch-main-card h3 {
+      .architecture-card h3 {
         margin: 0 0 15px 0;
-        font-size: 24px;
-        color: #4ecdc4;
+        font-size: 20px;
+        color: #00ff00;
+        font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+        text-shadow: 0 0 10px #00ff00;
+        height: 25px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      .arch-main-card p {
+      .architecture-card p {
         margin: 10px 0;
         font-size: 16px;
         line-height: 1.4;
-        opacity: 0.9;
+        color: #ffffff;
+        font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+        opacity: 1;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
       }
 
-      .arch-sidebar {
-        width: 300px;
+      .navigation-panel {
+        width: 250px;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 15px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 20px;
+        padding: 15px;
         overflow-y: auto;
       }
 
-      .arch-sidebar h3 {
+      .navigation-panel h3 {
         color: #4ecdc4;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         border-bottom: 2px solid #4ecdc4;
-        padding-bottom: 10px;
+        padding-bottom: 8px;
       }
 
-      .arch-nav-item {
+      .nav-item {
         display: block;
-        padding: 12px 15px;
-        margin: 8px 0;
+        padding: 10px 12px;
+        margin: 6px 0;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 8px;
         border-left: 4px solid transparent;
         color: rgba(255, 255, 255, 0.7);
         text-decoration: none;
-        font-size: 14px;
+        font-size: 12px;
         transition: all 0.3s ease;
         cursor: pointer;
       }
 
-      .arch-nav-item:hover {
+      .nav-item:hover {
         background: rgba(255, 255, 255, 0.2);
         color: white;
         border-left-color: #4ecdc4;
       }
 
-      .arch-nav-item.active {
+      .nav-item.active {
         background: rgba(78, 205, 196, 0.2);
         color: #4ecdc4;
         border-left-color: #4ecdc4;
         font-weight: bold;
       }
 
-      .arch-nav-item.visited {
+      .nav-item.visited {
         border-left-color: #96ceb4;
         color: #96ceb4;
       }
 
-      .arch-progress {
+      .nav-item small {
+        display: block;
+        font-size: 11px;
+        opacity: 0.8;
+        margin-top: 2px;
+      }
+
+      .progress-section {
         margin-top: 20px;
         padding-top: 20px;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -157,13 +200,7 @@
         margin-top: 10px;
       }
 
-      /* Special styling for AI components */
-      .arch-main-card.ai-component {
-        background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-      }
-
-      /* Animation effects */
-      .flow-arrow {
+      .flow-indicator {
         position: absolute;
         bottom: 20px;
         left: 50%;
@@ -171,6 +208,82 @@
         font-size: 30px;
         color: #4ecdc4;
         animation: bounce 2s infinite;
+        cursor: pointer;
+        user-select: none;
+        transition: color 0.3s ease;
+      }
+
+      .flow-indicator:hover {
+        color: #ff6b6b;
+        animation-duration: 1s;
+      }
+
+      .flow-indicator.disabled {
+        color: #666;
+        cursor: not-allowed;
+        animation: none;
+      }
+
+      /* Special styling for AI components */
+      .architecture-card.ai-component {
+        background: #000000;
+        border-color: #ff6b6b;
+      }
+
+      .architecture-card.ai-component h3 {
+        color: #ff6b6b;
+        text-shadow: 0 0 10px #ff6b6b;
+      }
+
+      /* Typewriter animation */
+      .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        animation: typewriter 2s steps(40, end);
+        border-right: 2px solid #00ff00;
+        animation-fill-mode: forwards;
+        display: inline-block;
+      }
+
+      .typewriter-description {
+        overflow: hidden;
+        white-space: normal;
+        opacity: 0;
+        animation: typewriter-description 2s ease-in-out;
+        animation-delay: 2.2s;
+        animation-fill-mode: forwards;
+        display: block;
+        word-wrap: break-word;
+        max-height: 80px;
+      }
+
+      @keyframes typewriter {
+        from { 
+          width: 0;
+          border-right-color: #00ff00;
+        }
+        to { 
+          width: 100%;
+          border-right-color: transparent;
+        }
+      }
+
+      @keyframes typewriter-description {
+        0% { 
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% { 
+          opacity: 1;
+        }
+      }
+
+      @keyframes blink-cursor {
+        from, to { border-right-color: transparent; }
+        50% { border-right-color: #00ff00; }
       }
 
       @keyframes bounce {
@@ -228,66 +341,173 @@
         font-size: 1.2em;
       }
 
+      /* First slide styling with IDs and absolute positioning */
+      #first-slide {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 100vh !important;
+        position: relative !important;
+      }
+
+      #first-slide h1 {
+        margin-bottom: 0 !important;
+        z-index: 1 !important;
+        position: relative !important;
+      }
+
+      #animated-subtitle {
+        position: absolute !important;
+        bottom: 35% !important;
+        left: 50% !important;
+        transform: translateX(-50%) translateY(40px) !important;
+        width: 100% !important;
+        text-align: center !important;
+        opacity: 0 !important;
+        transition: all 1.2s ease-in-out !important;
+        z-index: 9999 !important;
+        pointer-events: none !important;
+      }
+
+      #animated-subtitle.slide-up {
+        opacity: 1 !important;
+        transform: translateX(-50%) translateY(0) !important;
+      }
+
+      #animated-subtitle h2 {
+        color: #4ecdc4 !important;
+        font-size: 1.6em !important;
+        font-weight: 300 !important;
+        margin: 0 !important;
+        text-shadow: 0 0 15px rgba(78, 205, 196, 0.5) !important;
+        letter-spacing: 3px !important;
+      }
+
+      #animated-footer {
+        position: absolute !important;
+        bottom: 15% !important;
+        left: 50% !important;
+        transform: translateX(-50%) translateY(40px) !important;
+        width: 100% !important;
+        text-align: center !important;
+        opacity: 0 !important;
+        transition: all 1.2s ease-in-out !important;
+        z-index: 9999 !important;
+        pointer-events: none !important;
+      }
+
+      #animated-footer.slide-up {
+        opacity: 1 !important;
+        transform: translateX(-50%) translateY(0) !important;
+      }
+
+      #animated-footer p {
+        color: rgba(255, 255, 255, 0.8) !important;
+        font-size: 0.9em !important;
+        margin: 0 !important;
+        font-weight: 900 !important;
+        letter-spacing: 1px !important;
+        border-top: 1px solid rgba(78, 205, 196, 0.3) !important;
+        padding-top: 15px !important;
+        width: 15% !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+      }
+
+      /* Mermaid diagram styling */
+      .mermaid {
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+      }
+
+      .mermaid svg {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Menu button styling */
+      .slide-menu-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 30;
+        color: #4ecdc4 !important;
+        font-size: 24px;
+      }
+
+      .slide-menu-button:hover {
+        color: #ff6b6b !important;
+      }
+
       /* Responsive adjustments */
       @media (max-width: 768px) {
-        .siem-architecture-container {
+        .siem-container {
           flex-direction: column;
           height: auto;
+          transform: scale(0.8);
         }
         
-        .architecture-display {
-          height: 50vh;
-          min-height: 300px;
+        .main-display {
+          height: 45vh;
+          min-height: 250px;
         }
         
-        .arch-sidebar {
+        .navigation-panel {
           width: 100%;
-          max-height: 40vh;
+          max-height: 35vh;
           order: -1;
         }
         
-        .arch-main-card {
-          min-width: 250px;
+        .architecture-card {
+          width: 280px;
+          height: 180px;
           padding: 20px;
-          font-size: 16px;
-        }
-        
-        .arch-main-card h3 {
-          font-size: 20px;
-        }
-        
-        .arch-main-card p {
           font-size: 14px;
         }
         
-        .arch-nav-item {
-          padding: 8px 12px;
+        .architecture-card h3 {
+          font-size: 18px;
+          height: 22px;
+        }
+        
+        .architecture-card p {
           font-size: 13px;
+          height: 70px;
+        }
+        
+        .nav-item {
+          padding: 6px 10px;
+          font-size: 11px;
         }
       }
 
       @media (max-width: 480px) {
-        .siem-architecture-container {
-          gap: 10px;
+        .siem-container {
+          gap: 8px;
+          transform: scale(0.7);
         }
         
-        .architecture-display {
-          height: 40vh;
-          min-height: 250px;
+        .main-display {
+          height: 35vh;
+          min-height: 200px;
         }
         
-        .arch-main-card {
-          min-width: 200px;
+        .architecture-card {
+          width: 250px;
+          height: 160px;
           padding: 15px;
-          font-size: 14px;
-        }
-        
-        .arch-main-card h3 {
-          font-size: 18px;
-        }
-        
-        .arch-main-card p {
           font-size: 12px;
+        }
+        
+        .architecture-card h3 {
+          font-size: 16px;
+          height: 20px;
+        }
+        
+        .architecture-card p {
+          font-size: 12px;
+          height: 60px;
         }
       }
     </style>
@@ -295,11 +515,91 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown="slides.md"
-                 data-separator="^\r?\n---\r?\n$"
-                 data-separator-vertical="^\r?\n----\r?\n$"
-                 data-separator-notes="^Note:"
-                 data-charset="utf-8">
+        <!-- Markdown slides -->
+        <section id="first-slide">
+          <h1>KISEC Final Project</h1>
+          <div id="animated-subtitle" class="slide-subtitle">
+            <h2>Secure. Intelligent. Scalable.</h2>
+          </div>
+          <div id="animated-footer" class="slide-footer">
+            <p>Byungnam Lee / KISEC, 2025 07 29 Spacehub Seoul</p>
+          </div>
+          <aside class="notes">
+            Welcome to the KISEC Final Project presentation. This covers our comprehensive security assessment and SIEM implementation.
+          </aside>
+        </section>
+        
+        <section data-background-gradient="linear-gradient(45deg, #1e3c72, #2a5298)">
+          <h1>Future</h1>
+          <aside class="notes">
+            The future of cybersecurity lies in proactive, intelligent monitoring systems that can adapt and respond to emerging threats in real-time.
+          </aside>
+        </section>
+        
+        <!-- SIEM Architecture Interactive Slide -->
+        <section id="siem-architecture-slide" data-background-gradient="linear-gradient(45deg, #1e3c72, #2a5298)">
+          <h2 style="color: #4ecdc4; margin-bottom: 30px;">SIEM Architecture Flow</h2>
+          <div class="siem-container">
+            <div class="main-display">
+              <div id="arch-card" class="architecture-card">
+                <h3 id="arch-title">SIEM Architecture</h3>
+                <p id="arch-description">Click navigation items to explore components</p>
+              </div>
+              <div class="flow-indicator">↓</div>
+            </div>
+            
+            <div class="navigation-panel">
+              <h3>Architecture Components</h3>
+              <nav id="arch-navigation"></nav>
+              <div class="progress-section">
+                <div class="progress-bar">
+                  <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                  <span id="progress-text">0 / 11 components explored</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="notes">
+            This diagram shows our complete SIEM architecture flow, from user devices all the way down to the SOC analyst dashboard. Each component will animate in sequence as we click through, showing the data flow from collection to analysis to response.
+          </aside>
+        </section>
+        
+        <!-- Continue with other slides -->
+        <section>
+          <h2>Network Security Flow</h2>
+          <p>Placeholder for Network Security Flow diagram</p>
+          <p style="font-size: 0.8em; color: #4ecdc4;">
+            Interactive diagram coming soon with Mermaid integration
+          </p>
+          <aside class="notes">
+            This slide will contain a Mermaid diagram showing the network security flow from user access request through to SIEM analysis.
+          </aside>
+        </section>
+        
+        <section>
+          <h1>Presence Before and After</h1>
+          <p>Identity is not a login — it's a shadow that moves with the user</p>
+          <aside class="notes">
+            We often ask who is trying to access the system — but rarely when, from where, and in what state. Identity doesn't appear at login; it lingers in the environment before the user speaks. This is a prelude — where presence is felt, not yet proven. A ripple in the fabric of the system.
+          </aside>
+        </section>
+        
+        <section>
+          <h1>Environment</h1>
+          <p>The quiet context: IP, hardware, entropy — all whisper who you are</p>
+          <aside class="notes">
+            The machine doesn't care about names. It notices voltages, entropy, keystroke rhythms, IPs that drift with the wind. These are the silent fingerprints of our presence. Trust isn't just about secrets — it's about consistency in context.
+          </aside>
+        </section>
+        
+        <section>
+          <h1>Forms Nowhere, Now Everywhere</h1>
+          <p>Authentication without asking — the body speaks before the mouth</p>
+          <aside class="notes">
+            The old model asked us to prove ourselves — but now, the proof is already here. Location speaks, device speaks, behavior speaks. The system reads the room before we enter it. Authentication becomes ambient, invisible, continuous.
+          </aside>
         </section>
       </div>
     </div>
@@ -310,6 +610,12 @@
     <script src="./plugin/zoom/zoom.js"></script>
     <script src="./plugin/notes/notes.js"></script>
     <script src="./plugin/math/math.js"></script>
+    
+    <!-- Additional plugins from CDN -->
+    <!-- Temporarily disabled for troubleshooting -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@4.1.5/chalkboard/plugin.js"></script> -->
 
     <script>
       // Initialize reveal.js
@@ -360,29 +666,125 @@
       let currentArchIndex = -1;
       let visitedComponents = new Set();
 
+      // Define SIEM architecture components
+      const archComponents = [
+        {
+          title: "User Devices",
+          icon: "📱",
+          description: "Endpoints generating security events and logs for monitoring",
+          subtitle: ""
+        },
+        {
+          title: "Sysmon / Auditd Logs",
+          icon: "📊",
+          description: "System monitoring and audit daemon logs capturing detailed system activities",
+          subtitle: ""
+        },
+        {
+          title: "Wazuh Agent",
+          icon: "🔍",
+          description: "Log collection agent performing local rule matching and initial filtering",
+          subtitle: "Log Collection & Local Rules"
+        },
+        {
+          title: "Wazuh Manager",
+          icon: "🎛️",
+          description: "Central management server handling rulesets, alerts, and agent coordination",
+          subtitle: "Ruleset, Alerts, etc."
+        },
+        {
+          title: "OpenSearch Stack",
+          icon: "🔎",
+          description: "Elasticsearch-based search and analytics engine for log indexing and querying",
+          subtitle: "Log Indexing & Search"
+        },
+        {
+          title: "Python Parser Layer",
+          icon: "🐍",
+          description: "Custom parsing layer to normalize and structure JSON alerts for AI processing",
+          subtitle: "Normalize JSON Alerts"
+        },
+        {
+          title: "AI Processing Layer",
+          icon: "🤖",
+          description: "Dual AI models for threat analysis: TinyLLaMA for text processing and MiniGPT-4 for multimodal analysis",
+          subtitle: "TinyLLaMA & MiniGPT-4",
+          isAI: true
+        },
+        {
+          title: "n8n Workflow",
+          icon: "🔄",
+          description: "Automation platform for alert routing and workflow orchestration",
+          subtitle: "Alert Routing"
+        },
+        {
+          title: "RASA NLU",
+          icon: "💬",
+          description: "Natural language understanding for intent classification and context extraction",
+          subtitle: "Intent + Context"
+        },
+        {
+          title: "TheHive / Cortex",
+          icon: "🕵️",
+          description: "Security orchestration platform with automated analyzers and response capabilities",
+          subtitle: "Security Orchestration"
+        },
+        {
+          title: "SOC Analyst Dashboard",
+          icon: "👨‍💻",
+          description: "Final interface for security analysts to investigate, respond, and manage security incidents",
+          subtitle: "Final Response Interface"
+        }
+      ];
+
       function initArchitectureNavigation() {
-        const navItems = document.querySelectorAll('.arch-nav-item');
-        const mainCard = document.getElementById('arch-main-card');
+        const architectureSlide = document.getElementById('siem-architecture-slide');
+        
+        if (!architectureSlide) return;
+
+        const navigation = document.getElementById('arch-navigation');
+        const mainCard = document.getElementById('arch-card');
         const archTitle = document.getElementById('arch-title');
         const archDescription = document.getElementById('arch-description');
         const progressFill = document.getElementById('progress-fill');
         const progressText = document.getElementById('progress-text');
+        const flowIndicator = document.querySelector('.flow-indicator');
 
-        if (!navItems.length || !mainCard) return;
-
-        // Add click handlers to navigation items
-        navItems.forEach((item, index) => {
-          item.addEventListener('click', () => {
-            showArchComponent(index);
+        // Add click functionality to flow indicator
+        if (flowIndicator) {
+          flowIndicator.addEventListener('click', () => {
+            const nextIndex = Math.min(currentArchIndex + 1, archComponents.length - 1);
+            if (nextIndex !== currentArchIndex) {
+              showArchComponent(nextIndex);
+            }
           });
-        });
+        }
+
+        // Only create navigation items if they don't exist
+        if (!navigation.hasChildNodes()) {
+          archComponents.forEach((component, index) => {
+            const navItem = document.createElement('div');
+            navItem.className = 'nav-item';
+            navItem.innerHTML = `
+              ${component.icon} ${component.title}
+              ${component.subtitle ? `<small>${component.subtitle}</small>` : ''}
+            `;
+            
+            navItem.addEventListener('click', () => {
+              showArchComponent(index);
+            });
+            
+            navigation.appendChild(navItem);
+          });
+        }
+
+        const navItems = navigation.querySelectorAll('.nav-item');
 
         function showArchComponent(index) {
           if (index === currentArchIndex) return;
 
+          const component = archComponents[index];
           const navItem = navItems[index];
-          const title = navItem.getAttribute('data-title');
-          const description = navItem.getAttribute('data-desc');
 
           // Update current index and mark as visited
           currentArchIndex = index;
@@ -391,28 +793,64 @@
           // Remove active class from all items
           navItems.forEach(item => {
             item.classList.remove('active');
-            if (visitedComponents.has(parseInt(item.getAttribute('data-index')))) {
-              item.classList.add('visited');
+          });
+
+          // Add visited class to previously visited items
+          visitedComponents.forEach(visitedIndex => {
+            if (visitedIndex !== index) {
+              navItems[visitedIndex].classList.add('visited');
             }
           });
 
           // Add active class to current item
           navItem.classList.add('active');
 
-          // Update main card with animation
-          mainCard.classList.remove('visible', 'highlight');
-          mainCard.classList.remove('ai-component');
+          // Update flow indicator state
+          const flowIndicator = document.querySelector('.flow-indicator');
+          if (flowIndicator) {
+            if (index === archComponents.length - 1) {
+              flowIndicator.classList.add('disabled');
+              flowIndicator.textContent = '✓';
+            } else {
+              flowIndicator.classList.remove('disabled');
+              flowIndicator.textContent = '↓';
+            }
+          }
+
+          // Update main card with animation and typewriter effect
+          mainCard.classList.remove('visible', 'highlight', 'ai-component');
 
           setTimeout(() => {
-            archTitle.textContent = title;
-            archDescription.textContent = description;
+            // Clear existing content and remove all animation classes
+            archTitle.textContent = '';
+            archDescription.textContent = '';
+            archTitle.className = '';
+            archDescription.className = '';
+            
+            // Force reflow to ensure classes are cleared
+            archTitle.offsetHeight;
+            archDescription.offsetHeight;
 
             // Special styling for AI components
-            if (index === 6) {
+            if (component.isAI) {
               mainCard.classList.add('ai-component');
             }
 
             mainCard.classList.add('visible');
+
+            // Start typewriter effect after a brief delay
+            setTimeout(() => {
+              // Add typewriter effect to title
+              archTitle.classList.add('typewriter');
+              archTitle.textContent = component.title;
+              
+              // Add typewriter effect to description with delay
+              setTimeout(() => {
+                archDescription.classList.add('typewriter-description');
+                archDescription.textContent = component.description;
+              }, 2200); // Wait for title animation to complete
+              
+            }, 100);
             
             // Highlight effect
             setTimeout(() => {
@@ -429,12 +867,12 @@
         }
 
         function updateProgress() {
-          const totalComponents = navItems.length;
+          const totalComponents = archComponents.length;
           const visitedCount = visitedComponents.size;
           const percentage = (visitedCount / totalComponents) * 100;
 
-          progressFill.style.width = percentage + '%';
-          progressText.textContent = `${visitedCount} / ${totalComponents} components explored`;
+          if (progressFill) progressFill.style.width = percentage + '%';
+          if (progressText) progressText.textContent = `${visitedCount} / ${totalComponents} components explored`;
         }
 
         // Auto-start with first component
@@ -442,38 +880,169 @@
           showArchComponent(0);
         }, 1000);
 
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-          if (!document.querySelector('.siem-architecture-container')) return;
+        // Keyboard navigation - Updated for better presentation control
+        function handleKeyNavigation(e) {
+          const siemSlide = document.getElementById('siem-architecture-slide');
+          if (!siemSlide || !siemSlide.closest('.present')) return;
 
-          if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+          // Prevent default reveal.js navigation for these keys on this slide
+          if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') {
             e.preventDefault();
-            const nextIndex = Math.min(currentArchIndex + 1, navItems.length - 1);
+            e.stopPropagation();
+            const nextIndex = Math.min(currentArchIndex + 1, archComponents.length - 1);
             if (nextIndex !== currentArchIndex) {
               showArchComponent(nextIndex);
             }
           } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
             e.preventDefault();
+            e.stopPropagation();
             const prevIndex = Math.max(currentArchIndex - 1, 0);
             if (prevIndex !== currentArchIndex) {
               showArchComponent(prevIndex);
             }
           }
-        });
+          // Allow 'Escape' or 'PageDown'/'PageUp' for slide navigation
+          else if (e.key === 'Escape' || e.key === 'PageDown' || e.key === 'PageUp') {
+            // Let reveal.js handle these
+            return;
+          }
+        }
+
+        // Remove existing listener and add new one
+        document.removeEventListener('keydown', handleKeyNavigation);
+        document.addEventListener('keydown', handleKeyNavigation);
       }
 
       // Auto-start presentation when ready
       Reveal.on('ready', event => {
         console.log('KISEC Final Project Presentation Ready');
-        // Initialize architecture navigation after a short delay
-        setTimeout(initArchitectureNavigation, 500);
+        
+        // Force immediate animation setup
+        setTimeout(() => {
+          forceFirstSlideAnimations();
+        }, 100);
+        
+        setTimeout(() => {
+          initArchitectureNavigation();
+          console.log('Architecture navigation initialized');
+        }, 500);
       });
 
-      // Re-initialize when slide changes
+      // Force animations using direct DOM manipulation
+      function forceFirstSlideAnimations() {
+        console.log('FORCE: Starting first slide animations...');
+        
+        const subtitle = document.getElementById('animated-subtitle');
+        const footer = document.getElementById('animated-footer');
+        
+        if (!subtitle || !footer) {
+          console.error('FORCE: Elements not found!');
+          return;
+        }
+
+        // Apply styles directly with JavaScript
+        subtitle.style.position = 'absolute';
+        subtitle.style.bottom = '35%';
+        subtitle.style.left = '50%';
+        subtitle.style.width = '100%';
+        subtitle.style.textAlign = 'center';
+        subtitle.style.opacity = '0';
+        subtitle.style.transform = 'translateX(-50%) translateY(40px)';
+        subtitle.style.zIndex = '9999';
+        subtitle.style.transition = 'all 1.2s ease-in-out';
+        subtitle.style.pointerEvents = 'none';
+
+        footer.style.position = 'absolute';
+        footer.style.bottom = '15%';
+        footer.style.left = '50%';
+        footer.style.width = '100%';
+        footer.style.textAlign = 'center';
+        footer.style.opacity = '0';
+        footer.style.transform = 'translateX(-50%) translateY(40px)';
+        footer.style.zIndex = '9999';
+        footer.style.transition = 'all 1.2s ease-in-out';
+        footer.style.pointerEvents = 'none';
+
+        console.log('FORCE: Initial styles applied');
+
+        // Animate subtitle
+        setTimeout(() => {
+          console.log('FORCE: Animating subtitle...');
+          subtitle.style.opacity = '1';
+          subtitle.style.transform = 'translateX(-50%) translateY(0)';
+        }, 2000);
+
+        // Animate footer
+        setTimeout(() => {
+          console.log('FORCE: Animating footer...');
+          footer.style.opacity = '1';
+          footer.style.transform = 'translateX(-50%) translateY(0)';
+        }, 5000);
+
+        // NO AUTO-ADVANCE - Remove the automatic next slide
+        // User must manually navigate to next slide
+        console.log('FORCE: Animations complete. Waiting for manual navigation.');
+      }
+
+      // Handle automatic animations for first slide
+      function handleFirstSlideAnimations() {
+        const firstSlide = document.getElementById('first-slide');
+        const subtitle = document.getElementById('animated-subtitle');
+        const footer = document.getElementById('animated-footer');
+        
+        if (!firstSlide || !subtitle || !footer) return;
+
+        console.log('Starting first slide animations...');
+
+        // Reset elements
+        subtitle.classList.remove('slide-up');
+        footer.classList.remove('slide-up');
+        
+        // Force initial styles
+        subtitle.style.opacity = '0';
+        subtitle.style.transform = 'translateX(-50%) translateY(40px)';
+        footer.style.opacity = '0';
+        footer.style.transform = 'translateX(-50%) translateY(40px)';
+
+        // Auto-advance subtitle and footer with 10-second total duration
+        setTimeout(() => {
+          console.log('Showing subtitle...');
+          subtitle.classList.add('slide-up');
+        }, 2000); // Show subtitle after 2 seconds
+
+        setTimeout(() => {
+          console.log('Showing footer...');
+          footer.classList.add('slide-up');
+        }, 5000); // Show footer after 5 seconds
+
+        // Auto-advance to next slide after 10 seconds
+        setTimeout(() => {
+          console.log('Auto-advancing to next slide...');
+          Reveal.next();
+        }, 10000); // 10 seconds total
+      }
+
+      // Re-initialize when slide changes to SIEM architecture
       Reveal.on('slidechanged', event => {
-        // Check if we're on the SIEM architecture slide
-        if (event.currentSlide.querySelector('.siem-architecture-container')) {
-          setTimeout(initArchitectureNavigation, 100);
+        const siemSlide = document.getElementById('siem-architecture-slide');
+        const firstSlide = document.getElementById('first-slide');
+        
+        console.log('Slide changed:', event.currentSlide.id);
+        
+        // Handle SIEM architecture slide
+        if (siemSlide && event.currentSlide === siemSlide) {
+          setTimeout(() => {
+            initArchitectureNavigation();
+            console.log('Architecture navigation re-initialized for slide change');
+          }, 100);
+        }
+        
+        // Handle first slide animations when returning to it
+        if (firstSlide && event.currentSlide === firstSlide) {
+          console.log('FORCE: Returning to first slide...');
+          setTimeout(() => {
+            forceFirstSlideAnimations();
+          }, 100);
         }
       });
     </script>

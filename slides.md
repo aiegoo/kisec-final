@@ -7,85 +7,10 @@ Welcome to the KISEC Final Project presentation. This covers our comprehensive s
 ---
 
 # Future
-<!-- .slide: data-background-gradient="linear-gradient(45deg, #1e3c72, #2a5298)" -->
+<!-- .slide: data-background-gradient="linear-gradient(45deg, #021f53ff, #00338bff)" -->
 
 Note:
 The future of cybersecurity lies in proactive, intelligent monitoring systems that can adapt and respond to emerging threats in real-time.
-
----
-
-# SIEM Architecture Flow
-<!-- .element: class="r-fit-text" -->
-
-<div class="siem-architecture-container">
-  <div class="architecture-display">
-    <div id="arch-main-card" class="arch-main-card">
-      <h3 id="arch-title">SIEM Architecture</h3>
-      <p id="arch-description">Click navigation items to explore components</p>
-    </div>
-    <div class="flow-arrow">↓</div>
-  </div>
-  
-  <div class="arch-sidebar">
-    <h3>Architecture Components</h3>
-    
-    <div class="arch-nav-item" data-index="0" data-title="User Devices" data-desc="Endpoints generating security events and logs for monitoring">
-      📱 User Devices
-    </div>
-    
-    <div class="arch-nav-item" data-index="1" data-title="Sysmon / Auditd Logs" data-desc="System monitoring and audit daemon logs capturing detailed system activities">
-      📊 Sysmon / Auditd Logs
-    </div>
-    
-    <div class="arch-nav-item" data-index="2" data-title="Wazuh Agent" data-desc="Log collection agent performing local rule matching and initial filtering">
-      🔍 Wazuh Agent<br><small>Log Collection & Local Rules</small>
-    </div>
-    
-    <div class="arch-nav-item" data-index="3" data-title="Wazuh Manager" data-desc="Central management server handling rulesets, alerts, and agent coordination">
-      🎛️ Wazuh Manager<br><small>Ruleset, Alerts, etc.</small>
-    </div>
-    
-    <div class="arch-nav-item" data-index="4" data-title="OpenSearch Stack" data-desc="Elasticsearch-based search and analytics engine for log indexing and querying">
-      🔎 OpenSearch Stack<br><small>Log Indexing & Search</small>
-    </div>
-    
-    <div class="arch-nav-item" data-index="5" data-title="Python Parser Layer" data-desc="Custom parsing layer to normalize and structure JSON alerts for AI processing">
-      🐍 Python Parser Layer<br><small>Normalize JSON Alerts</small>
-    </div>
-    
-    <div class="arch-nav-item ai-branch" data-index="6" data-title="AI Processing Layer" data-desc="Dual AI models for threat analysis: TinyLLaMA for text processing and MiniGPT-4 for multimodal analysis">
-      🤖 AI Processing<br><small>TinyLLaMA & MiniGPT-4</small>
-    </div>
-    
-    <div class="arch-nav-item" data-index="7" data-title="n8n Workflow" data-desc="Automation platform for alert routing and workflow orchestration">
-      🔄 n8n Workflow<br><small>Alert Routing</small>
-    </div>
-    
-    <div class="arch-nav-item" data-index="8" data-title="RASA NLU" data-desc="Natural language understanding for intent classification and context extraction">
-      💬 RASA NLU<br><small>Intent + Context</small>
-    </div>
-    
-    <div class="arch-nav-item" data-index="9" data-title="TheHive / Cortex" data-desc="Security orchestration platform with automated analyzers and response capabilities">
-      🕵️ TheHive / Cortex<br><small>Security Orchestration</small>
-    </div>
-    
-    <div class="arch-nav-item" data-index="10" data-title="SOC Analyst Dashboard" data-desc="Final interface for security analysts to investigate, respond, and manage security incidents">
-      👨‍💻 SOC Analyst Dashboard<br><small>Final Response Interface</small>
-    </div>
-    
-    <div class="arch-progress">
-      <div class="progress-bar">
-        <div id="progress-fill" class="progress-fill"></div>
-      </div>
-      <div class="progress-text">
-        <span id="progress-text">0 / 11 components explored</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-Note:
-This diagram shows our complete SIEM architecture flow, from user devices all the way down to the SOC analyst dashboard. Each component will animate in sequence as we click through, showing the data flow from collection to analysis to response.
 
 ---
 
