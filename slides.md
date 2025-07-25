@@ -17,64 +17,70 @@ The future of cybersecurity lies in proactive, intelligent monitoring systems th
 # SIEM Architecture Flow
 <!-- .element: class="r-fit-text" -->
 
-<div class="architecture-diagram">
-  <div class="arch-node fragment" data-fragment-index="1">
-    <div class="node-box">User Devices</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="1">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="2">
-    <div class="node-box">Sysmon /<br/>Auditd Logs</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="2">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="3">
-    <div class="node-box">Wazuh Agent<br/>(Log Collection &<br/>Local Rule Matching)</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="3">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="4">
-    <div class="node-box">Wazuh Manager<br/>(Ruleset, Alerts, etc.)</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="4">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="5">
-    <div class="node-box">OpenSearch Stack<br/>(Log Indexing & Search)</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="5">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="6">
-    <div class="node-box">Python Parser Layer<br/>(Normalize JSON Alerts)</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="6">↓</div>
-  
-  <div class="arch-split fragment" data-fragment-index="7">
-    <div class="arch-branch">
-      <div class="node-box">TinyLLaMA</div>
+<div class="siem-architecture-container">
+  <div class="architecture-display">
+    <div id="arch-main-card" class="arch-main-card">
+      <h3 id="arch-title">SIEM Architecture</h3>
+      <p id="arch-description">Click navigation items to explore components</p>
     </div>
-    <div class="arch-branch">
-      <div class="node-box">MiniGPT-4</div>
+    <div class="flow-arrow">↓</div>
+  </div>
+  
+  <div class="arch-sidebar">
+    <h3>Architecture Components</h3>
+    
+    <div class="arch-nav-item" data-index="0" data-title="User Devices" data-desc="Endpoints generating security events and logs for monitoring">
+      📱 User Devices
     </div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="7">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="8">
-    <div class="node-box">n8n Workflow<br/>(Alert Routing)</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="8">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="9">
-    <div class="node-box">RASA NLU<br/>(Intent +<br/>context)</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="9">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="10">
-    <div class="node-box">TheHive / Cortex<br/>- Alert creation<br/>- Analyzer suggestions<br/>- Responder integration</div>
-  </div>
-  <div class="arch-arrow fragment" data-fragment-index="10">↓</div>
-  
-  <div class="arch-node fragment" data-fragment-index="11">
-    <div class="node-box">SOC Analyst Dashboard</div>
+    
+    <div class="arch-nav-item" data-index="1" data-title="Sysmon / Auditd Logs" data-desc="System monitoring and audit daemon logs capturing detailed system activities">
+      📊 Sysmon / Auditd Logs
+    </div>
+    
+    <div class="arch-nav-item" data-index="2" data-title="Wazuh Agent" data-desc="Log collection agent performing local rule matching and initial filtering">
+      🔍 Wazuh Agent<br><small>Log Collection & Local Rules</small>
+    </div>
+    
+    <div class="arch-nav-item" data-index="3" data-title="Wazuh Manager" data-desc="Central management server handling rulesets, alerts, and agent coordination">
+      🎛️ Wazuh Manager<br><small>Ruleset, Alerts, etc.</small>
+    </div>
+    
+    <div class="arch-nav-item" data-index="4" data-title="OpenSearch Stack" data-desc="Elasticsearch-based search and analytics engine for log indexing and querying">
+      🔎 OpenSearch Stack<br><small>Log Indexing & Search</small>
+    </div>
+    
+    <div class="arch-nav-item" data-index="5" data-title="Python Parser Layer" data-desc="Custom parsing layer to normalize and structure JSON alerts for AI processing">
+      🐍 Python Parser Layer<br><small>Normalize JSON Alerts</small>
+    </div>
+    
+    <div class="arch-nav-item ai-branch" data-index="6" data-title="AI Processing Layer" data-desc="Dual AI models for threat analysis: TinyLLaMA for text processing and MiniGPT-4 for multimodal analysis">
+      🤖 AI Processing<br><small>TinyLLaMA & MiniGPT-4</small>
+    </div>
+    
+    <div class="arch-nav-item" data-index="7" data-title="n8n Workflow" data-desc="Automation platform for alert routing and workflow orchestration">
+      🔄 n8n Workflow<br><small>Alert Routing</small>
+    </div>
+    
+    <div class="arch-nav-item" data-index="8" data-title="RASA NLU" data-desc="Natural language understanding for intent classification and context extraction">
+      💬 RASA NLU<br><small>Intent + Context</small>
+    </div>
+    
+    <div class="arch-nav-item" data-index="9" data-title="TheHive / Cortex" data-desc="Security orchestration platform with automated analyzers and response capabilities">
+      🕵️ TheHive / Cortex<br><small>Security Orchestration</small>
+    </div>
+    
+    <div class="arch-nav-item" data-index="10" data-title="SOC Analyst Dashboard" data-desc="Final interface for security analysts to investigate, respond, and manage security incidents">
+      👨‍💻 SOC Analyst Dashboard<br><small>Final Response Interface</small>
+    </div>
+    
+    <div class="arch-progress">
+      <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+      <div class="progress-text">
+        <span id="progress-text">0 / 11 components explored</span>
+      </div>
+    </div>
   </div>
 </div>
 

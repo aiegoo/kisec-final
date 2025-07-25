@@ -14,69 +14,175 @@
     
     <!-- Custom CSS for architecture diagram -->
     <style>
-      .architecture-diagram {
+      .siem-architecture-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        height: 70vh;
+        gap: 20px;
         margin: 20px 0;
       }
 
-      .arch-node {
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: all 0.6s ease;
+      .architecture-display {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        border: 2px solid rgba(78, 205, 196, 0.3);
+        position: relative;
+        overflow: hidden;
       }
 
-      .arch-node.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .node-box {
+      .arch-main-card {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        border: 2px solid #4ecdc4;
-        border-radius: 10px;
-        padding: 15px 20px;
+        border: 3px solid #4ecdc4;
+        border-radius: 20px;
+        padding: 40px;
         color: white;
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: bold;
-        min-width: 200px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        margin: 5px 0;
-      }
-
-      .arch-arrow {
-        font-size: 24px;
-        color: #4ecdc4;
+        min-width: 300px;
+        max-width: 400px;
+        min-height: 200px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        transform: scale(0.8);
         opacity: 0;
-        transform: scale(0);
-        transition: all 0.4s ease;
-        margin: 5px 0;
+        transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
-      .arch-arrow.visible {
+      .arch-main-card.visible {
         opacity: 1;
         transform: scale(1);
       }
 
-      .arch-split {
-        display: flex;
-        gap: 40px;
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: all 0.6s ease;
+      .arch-main-card.highlight {
+        border-color: #ff6b6b;
+        box-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
+        transform: scale(1.05);
       }
 
-      .arch-split.visible {
-        opacity: 1;
-        transform: translateY(0);
+      .arch-main-card h3 {
+        margin: 0 0 15px 0;
+        font-size: 24px;
+        color: #4ecdc4;
       }
 
-      .arch-branch .node-box {
-        min-width: 150px;
+      .arch-main-card p {
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.4;
+        opacity: 0.9;
+      }
+
+      .arch-sidebar {
+        width: 300px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        overflow-y: auto;
+      }
+
+      .arch-sidebar h3 {
+        color: #4ecdc4;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 18px;
+        border-bottom: 2px solid #4ecdc4;
+        padding-bottom: 10px;
+      }
+
+      .arch-nav-item {
+        display: block;
+        padding: 12px 15px;
+        margin: 8px 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        border-left: 4px solid transparent;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .arch-nav-item:hover {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border-left-color: #4ecdc4;
+      }
+
+      .arch-nav-item.active {
+        background: rgba(78, 205, 196, 0.2);
+        color: #4ecdc4;
+        border-left-color: #4ecdc4;
+        font-weight: bold;
+      }
+
+      .arch-nav-item.visited {
+        border-left-color: #96ceb4;
+        color: #96ceb4;
+      }
+
+      .arch-progress {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #4ecdc4, #96ceb4);
+        width: 0%;
+        transition: width 0.5s ease;
+      }
+
+      .progress-text {
+        text-align: center;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 10px;
+      }
+
+      /* Special styling for AI components */
+      .arch-main-card.ai-component {
         background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+      }
+
+      /* Animation effects */
+      .flow-arrow {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        color: #4ecdc4;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        40% {
+          transform: translateX(-50%) translateY(-10px);
+        }
+        60% {
+          transform: translateX(-50%) translateY(-5px);
+        }
       }
 
       .timeline-container {
@@ -124,15 +230,64 @@
 
       /* Responsive adjustments */
       @media (max-width: 768px) {
-        .arch-split {
+        .siem-architecture-container {
           flex-direction: column;
-          gap: 20px;
+          height: auto;
         }
         
-        .node-box {
-          min-width: 150px;
+        .architecture-display {
+          height: 50vh;
+          min-height: 300px;
+        }
+        
+        .arch-sidebar {
+          width: 100%;
+          max-height: 40vh;
+          order: -1;
+        }
+        
+        .arch-main-card {
+          min-width: 250px;
+          padding: 20px;
+          font-size: 16px;
+        }
+        
+        .arch-main-card h3 {
+          font-size: 20px;
+        }
+        
+        .arch-main-card p {
+          font-size: 14px;
+        }
+        
+        .arch-nav-item {
+          padding: 8px 12px;
+          font-size: 13px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .siem-architecture-container {
+          gap: 10px;
+        }
+        
+        .architecture-display {
+          height: 40vh;
+          min-height: 250px;
+        }
+        
+        .arch-main-card {
+          min-width: 200px;
+          padding: 15px;
+          font-size: 14px;
+        }
+        
+        .arch-main-card h3 {
+          font-size: 18px;
+        }
+        
+        .arch-main-card p {
           font-size: 12px;
-          padding: 10px 15px;
         }
       }
     </style>
@@ -201,9 +356,125 @@
         }
       });
 
+      // SIEM Architecture Interactive Navigation
+      let currentArchIndex = -1;
+      let visitedComponents = new Set();
+
+      function initArchitectureNavigation() {
+        const navItems = document.querySelectorAll('.arch-nav-item');
+        const mainCard = document.getElementById('arch-main-card');
+        const archTitle = document.getElementById('arch-title');
+        const archDescription = document.getElementById('arch-description');
+        const progressFill = document.getElementById('progress-fill');
+        const progressText = document.getElementById('progress-text');
+
+        if (!navItems.length || !mainCard) return;
+
+        // Add click handlers to navigation items
+        navItems.forEach((item, index) => {
+          item.addEventListener('click', () => {
+            showArchComponent(index);
+          });
+        });
+
+        function showArchComponent(index) {
+          if (index === currentArchIndex) return;
+
+          const navItem = navItems[index];
+          const title = navItem.getAttribute('data-title');
+          const description = navItem.getAttribute('data-desc');
+
+          // Update current index and mark as visited
+          currentArchIndex = index;
+          visitedComponents.add(index);
+
+          // Remove active class from all items
+          navItems.forEach(item => {
+            item.classList.remove('active');
+            if (visitedComponents.has(parseInt(item.getAttribute('data-index')))) {
+              item.classList.add('visited');
+            }
+          });
+
+          // Add active class to current item
+          navItem.classList.add('active');
+
+          // Update main card with animation
+          mainCard.classList.remove('visible', 'highlight');
+          mainCard.classList.remove('ai-component');
+
+          setTimeout(() => {
+            archTitle.textContent = title;
+            archDescription.textContent = description;
+
+            // Special styling for AI components
+            if (index === 6) {
+              mainCard.classList.add('ai-component');
+            }
+
+            mainCard.classList.add('visible');
+            
+            // Highlight effect
+            setTimeout(() => {
+              mainCard.classList.add('highlight');
+              setTimeout(() => {
+                mainCard.classList.remove('highlight');
+              }, 1500);
+            }, 400);
+
+          }, 300);
+
+          // Update progress
+          updateProgress();
+        }
+
+        function updateProgress() {
+          const totalComponents = navItems.length;
+          const visitedCount = visitedComponents.size;
+          const percentage = (visitedCount / totalComponents) * 100;
+
+          progressFill.style.width = percentage + '%';
+          progressText.textContent = `${visitedCount} / ${totalComponents} components explored`;
+        }
+
+        // Auto-start with first component
+        setTimeout(() => {
+          showArchComponent(0);
+        }, 1000);
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+          if (!document.querySelector('.siem-architecture-container')) return;
+
+          if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            const nextIndex = Math.min(currentArchIndex + 1, navItems.length - 1);
+            if (nextIndex !== currentArchIndex) {
+              showArchComponent(nextIndex);
+            }
+          } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            const prevIndex = Math.max(currentArchIndex - 1, 0);
+            if (prevIndex !== currentArchIndex) {
+              showArchComponent(prevIndex);
+            }
+          }
+        });
+      }
+
       // Auto-start presentation when ready
       Reveal.on('ready', event => {
         console.log('KISEC Final Project Presentation Ready');
+        // Initialize architecture navigation after a short delay
+        setTimeout(initArchitectureNavigation, 500);
+      });
+
+      // Re-initialize when slide changes
+      Reveal.on('slidechanged', event => {
+        // Check if we're on the SIEM architecture slide
+        if (event.currentSlide.querySelector('.siem-architecture-container')) {
+          setTimeout(initArchitectureNavigation, 100);
+        }
       });
     </script>
   </body>
